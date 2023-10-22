@@ -1,0 +1,278 @@
+{
+  "type": "record",
+  "name": "USAccidents",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "string"
+    },
+    {
+      "name": "Source",
+      "type": "string"
+    },
+    {
+      "name": "Severity",
+      "type": "long"
+    },
+    {
+      "name": "Start_Time",
+      "type": "string"
+    },
+    {
+      "name": "End_Time",
+      "type": "string"
+    },
+    {
+      "name": "Start_Lat",
+      "type": "double"
+    },
+    {
+      "name": "Start_Lng",
+      "type": "double"
+    },
+    {
+      "name": "End_Lat",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "End_Lng",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "Distance",
+      "type": "float"
+    },
+    {
+      "name": "Description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Street",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "City",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "County",
+      "type": "string"
+    },
+    {
+      "name": "State",
+      "type": "string"
+    },
+    {
+      "name": "Zipcode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Country",
+      "type": "string"
+    },
+    {
+      "name": "Timezone",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Airport_Code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Weather_Timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Temperature",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Wind_Chill",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Humidity",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Pressure",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Visibility",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Wind_Direction",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Wind_Speed",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "Precipitation",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Weather_Condition",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Amenity",
+      "type": "boolean"
+    },
+    {
+      "name": "Bump",
+      "type": "boolean"
+    },
+    {
+      "name": "Crossing",
+      "type": "boolean"
+    },
+    {
+      "name": "Give_Way",
+      "type": "boolean"
+    },
+    {
+      "name": "Junction",
+      "type": "boolean"
+    },
+    {
+      "name": "No_Exit",
+      "type": "boolean"
+    },
+    {
+      "name": "Railway",
+      "type": "boolean"
+    },
+    {
+      "name": "Roundabout",
+      "type": "boolean"
+    },
+    {
+      "name": "Station",
+      "type": "boolean"
+    },
+    {
+      "name": "Stop",
+      "type": "boolean"
+    },
+    {
+      "name": "Traffic_Calming",
+      "type": "boolean"
+    },
+    {
+      "name": "Traffic_Signal",
+      "type": "boolean"
+    },
+    {
+      "name": "Turning_Loop",
+      "type": "boolean"
+    },
+    {
+      "name": "Sunrise_Sunset",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Civil_Twilight",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Nautical_Twilight",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "Astronomical_Twilight",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

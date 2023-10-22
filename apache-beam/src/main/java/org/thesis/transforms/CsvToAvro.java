@@ -9,11 +9,12 @@ import org.apache.beam.sdk.transforms.ParDo;
 import org.apache.beam.sdk.values.PCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.thesis.options.BeamOptions;
 
 import java.util.List;
 
 public class CsvToAvro {
+    private static final Logger LOG = LoggerFactory.getLogger(CsvToAvro.class);
+
     public static PCollection<GenericRecord> runCsvToAvro(PCollection<String> rawData,
                                                           String delimiter, String schemaJson) {
         Schema schema = new Schema.Parser().parse(schemaJson);
@@ -83,13 +84,11 @@ public class CsvToAvro {
                             genericRecord.put(field.name(), Double.valueOf(cellValue));
                             break;
                         default:
-                            // Handle unsupported data types
+                            LOG.info("This type cannot be parsed.");
                             throw new IllegalArgumentException("Field type " + fieldType + " is not supported.");
                     }
                 } catch (NumberFormatException e) {
-                    // Handle invalid numeric values (non-numeric data)
-                    genericRecord.put(field.name(), null);
-                    // Log or handle the error as needed
+                    throw new NumberFormatException("This type cannot be parsed");
                 }
             }
 

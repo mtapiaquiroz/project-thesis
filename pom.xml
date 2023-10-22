@@ -11,6 +11,7 @@
     <modules>
         <module>parent-pom</module>
         <module>apache-beam</module>
+        <module>apache-spark</module>
     </modules>
 
     <properties>
