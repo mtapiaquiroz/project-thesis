@@ -21,6 +21,7 @@ public class AppSpark {
         JavaSparkContext sc = new JavaSparkContext(sparkConf);
         SQLContext sqlContext = new SQLContext(sc);
         SparkSession spark = SparkSession.builder().appName("AppSpark").config(sparkConf).getOrCreate();
+        long startTime = System.currentTimeMillis();
 
         String inputCsvPath = args[0];
         String avroSchemaPath = args[1];
@@ -41,5 +42,9 @@ public class AppSpark {
                 .save(outputAvroPath);
 
         spark.stop();
+        long endTime = System.currentTimeMillis();
+        long executionTime = endTime - startTime;
+        System.out.println("Time in sec: " + (executionTime/1000));
+
     }
 }
