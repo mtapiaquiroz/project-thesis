@@ -13,7 +13,7 @@ import org.thesis.utils.Utils;
 
 import java.io.IOException;
 
-public class App {
+public class AppBeam {
 
     public static void buildPipeline(Pipeline pipeline, BeamOptions options) throws IOException {
         String schemaJson = Utils.getSchema(options.getAvroSchemaPath());
@@ -27,7 +27,7 @@ public class App {
     public static void main(String[] args) throws IOException {
         var options = PipelineOptionsFactory.fromArgs(args).withValidation().as(BeamOptions.class);
         var pipeline = Pipeline.create(options);
-        App.buildPipeline(pipeline, options);
+        AppBeam.buildPipeline(pipeline, options);
         pipeline.run().waitUntilFinish();
     }
 }

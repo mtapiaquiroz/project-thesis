@@ -12,6 +12,7 @@
     <properties>
         <avro.version>1.11.3</avro.version>
         <beam.version>2.51.0</beam.version>
+        <spark.version>3.5.0</spark.version>
         <slfj4j.version>1.7.32</slfj4j.version>
 
         <maven.assembly.plugin.version>3.6.0</maven.assembly.plugin.version>
