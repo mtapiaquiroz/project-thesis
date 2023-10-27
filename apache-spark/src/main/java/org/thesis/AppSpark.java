@@ -6,12 +6,9 @@ import org.apache.spark.sql.*;
 import org.apache.spark.sql.types.StructType;
 import org.thesis.utils.AvroSchemaConverter;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 public class AppSpark {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length != 3) {
             System.err.println("Usage: AppSpark <inputCsvPath> <avroSchemaPath> <outputAvroPath>");
             System.exit(1);
@@ -44,7 +41,7 @@ public class AppSpark {
         spark.stop();
         long endTime = System.currentTimeMillis();
         long executionTime = endTime - startTime;
-        System.out.println("Time in sec: " + (executionTime/1000));
+        System.out.println("Time in sec: " + (executionTime / 1000));
 
     }
 }
