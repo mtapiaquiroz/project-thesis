@@ -23,28 +23,37 @@ public class AvroSchemaConverter {
     }
 
     private static DataType convertAvroToSparkDataType(Schema avroType) {
-        return switch (avroType.getType()) {
-            case STRING -> DataTypes.StringType;
-            case BOOLEAN -> DataTypes.BooleanType;
-            case INT -> DataTypes.IntegerType;
-            case LONG -> DataTypes.LongType;
-            case FLOAT -> DataTypes.FloatType;
-            case DOUBLE -> DataTypes.DoubleType;
-            case ARRAY -> DataTypes.createArrayType(convertAvroToSparkDataType(avroType.getElementType()), true);
-            case MAP ->
-                    DataTypes.createMapType(DataTypes.StringType, convertAvroToSparkDataType(avroType.getValueType()));
-            case UNION -> {
+        switch (avroType.getType()) {
+            case STRING:
+                return DataTypes.StringType;
+            case BOOLEAN:
+                return DataTypes.BooleanType;
+            case INT:
+                return DataTypes.IntegerType;
+            case LONG:
+                return DataTypes.LongType;
+            case FLOAT:
+                return DataTypes.FloatType;
+            case DOUBLE:
+                return DataTypes.DoubleType;
+            case ARRAY:
+                return DataTypes.createArrayType(convertAvroToSparkDataType(avroType.getElementType()), true);
+            case MAP:
+                return DataTypes.createMapType(DataTypes.StringType, convertAvroToSparkDataType(avroType.getValueType()));
+            case UNION:
                 for (Schema unionType : avroType.getTypes()) {
                     if (unionType.getType() != Schema.Type.NULL) {
-                        yield convertAvroToSparkDataType(unionType);
+                        return convertAvroToSparkDataType(unionType);
                     }
                 }
-                yield DataTypes.NullType;
-            }
-            case RECORD -> convertAvroRecordToStructType(avroType);
-            default -> DataTypes.NullType;
-        };
+                return DataTypes.NullType;
+            case RECORD:
+                return convertAvroRecordToStructType(avroType);
+            default:
+                return DataTypes.NullType;
+        }
     }
+
 
     private static StructType convertAvroRecordToStructType(Schema avroRecord) {
         StructType structType = new StructType();

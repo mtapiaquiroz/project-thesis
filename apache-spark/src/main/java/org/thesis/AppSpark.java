@@ -27,7 +27,7 @@ public class AppSpark {
         String avroSchemaPath = args[1];
         String outputAvroPath = args[2];
 
-        String avroSchemaString = new String(Files.readAllBytes(Paths.get(avroSchemaPath)));
+        String avroSchemaString = spark.read().textFile(avroSchemaPath).collectAsList().get(0);
         StructType structType = AvroSchemaConverter.avroSchemaToStructType(avroSchemaString);
 
         Dataset<Row> csvData = sqlContext.read().
