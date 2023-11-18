@@ -5,7 +5,6 @@ import org.apache.avro.generic.GenericRecord;
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.extensions.avro.io.AvroIO;
 import org.apache.beam.sdk.io.TextIO;
-import org.apache.beam.sdk.metrics.Metrics;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.values.PCollection;
 import org.thesis.options.BeamOptions;
@@ -23,7 +22,6 @@ public class AppBeam {
         avroData.apply(AvroIO.writeGenericRecords(schemaJson).to(options.getOutputPath() + "beam")
                 .withSuffix(".avro").withCodec(CodecFactory.snappyCodec()));
     }
-
 
     public static void main(String[] args) throws IOException {
         var options = PipelineOptionsFactory.fromArgs(args).withValidation().as(BeamOptions.class);
