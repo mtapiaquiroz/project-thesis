@@ -1,0 +1,1748 @@
+Execution 1:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-a80e848c-a9b3-4939-82d3-1d1570c41f16;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (1573ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (3244ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (730ms)
+:: resolution report :: resolve 8486ms :: artifacts dl 5561ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-a80e848c-a9b3-4939-82d3-1d1570c41f16
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/15ms)
+23/11/29 02:42:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:42:43 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:42:43 INFO ResourceUtils: ==============================================================
+23/11/29 02:42:43 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:42:43 INFO ResourceUtils: ==============================================================
+23/11/29 02:42:43 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:42:43 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:42:43 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:42:43 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:42:43 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:42:43 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:42:43 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:42:43 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:42:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:42:44 INFO Utils: Successfully started service 'sparkDriver' on port 41357.
+23/11/29 02:42:44 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:42:44 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:42:44 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:42:44 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:42:44 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:42:44 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-32aad982-c896-4a14-bfd1-fcbf8aa9b5e8
+23/11/29 02:42:44 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:42:44 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:42:44 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:42:44 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://9100c0ce554c:41357/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://9100c0ce554c:41357/jars/org.tukaani_xz-1.9.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://9100c0ce554c:41357/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://9100c0ce554c:41357/jars/spark.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO Executor: Starting executor ID driver on host 9100c0ce554c
+23/11/29 02:42:44 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:42:44 INFO Executor: Fetching spark://9100c0ce554c:41357/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO TransportClientFactory: Successfully created connection to 9100c0ce554c/172.17.0.2:41357 after 28 ms (0 ms spent in bootstraps)
+23/11/29 02:42:44 INFO Utils: Fetching spark://9100c0ce554c:41357/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/fetchFileTemp6767843627383881217.tmp
+23/11/29 02:42:44 INFO Executor: Adding file:/tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:42:44 INFO Executor: Fetching spark://9100c0ce554c:41357/jars/spark.jar with timestamp 1701225763707
+23/11/29 02:42:44 INFO Utils: Fetching spark://9100c0ce554c:41357/jars/spark.jar to /tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/fetchFileTemp7119150687339096200.tmp
+23/11/29 02:42:45 INFO Executor: Adding file:/tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/spark.jar to class loader
+23/11/29 02:42:45 INFO Executor: Fetching spark://9100c0ce554c:41357/jars/org.tukaani_xz-1.9.jar with timestamp 1701225763707
+23/11/29 02:42:45 INFO Utils: Fetching spark://9100c0ce554c:41357/jars/org.tukaani_xz-1.9.jar to /tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/fetchFileTemp7366054289279610532.tmp
+23/11/29 02:42:45 INFO Executor: Adding file:/tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:42:45 INFO Executor: Fetching spark://9100c0ce554c:41357/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225763707
+23/11/29 02:42:45 INFO Utils: Fetching spark://9100c0ce554c:41357/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/fetchFileTemp46935692752008207.tmp
+23/11/29 02:42:45 INFO Executor: Adding file:/tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a/userFiles-77799bde-726c-4a72-b62f-7fdbea4177d5/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:42:45 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34811.
+23/11/29 02:42:45 INFO NettyBlockTransferService: Server created on 9100c0ce554c:34811
+23/11/29 02:42:45 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:42:45 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 9100c0ce554c, 34811, None)
+23/11/29 02:42:45 INFO BlockManagerMasterEndpoint: Registering block manager 9100c0ce554c:34811 with 434.4 MiB RAM, BlockManagerId(driver, 9100c0ce554c, 34811, None)
+23/11/29 02:42:45 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 9100c0ce554c, 34811, None)
+23/11/29 02:42:45 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 9100c0ce554c, 34811, None)
+23/11/29 02:42:45 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:42:45 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:42:46 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:42:46 INFO InMemoryFileIndex: It took 40 ms to list leaf files for 1 paths.
+23/11/29 02:42:48 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:42:48 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:42:48 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:42:48 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:42:49 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:42:49 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 9100c0ce554c:34811 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:42:49 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:42:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:42:49 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:42:49 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:42:49 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:42:49 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:42:49 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:42:49 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:42:49 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:42:49 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:42:49 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 9100c0ce554c:34811 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:42:49 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:42:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:42:49 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:42:49 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (9100c0ce554c, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:42:49 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:42:49 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:42:49 INFO CodeGenerator: Code generated in 167.641088 ms
+23/11/29 02:42:49 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:42:49 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 388 ms on 9100c0ce554c (executor driver) (1/1)
+23/11/29 02:42:49 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:42:49 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.487 s
+23/11/29 02:42:49 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:42:49 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:42:49 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.529797 s
+23/11/29 02:42:49 INFO CodeGenerator: Code generated in 13.458925 ms
+23/11/29 02:42:49 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:42:50 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:42:50 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:42:50 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:42:50 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:42:50 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:42:50 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:42:50 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:42:50 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:42:50 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:42:50 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:42:50 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:42:50 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 9100c0ce554c:34811 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:42:50 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:42:50 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:42:50 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:42:50 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:42:50 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:42:50 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:42:50 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:42:50 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:42:50 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:42:50 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.6 KiB, free 433.6 MiB)
+23/11/29 02:42:50 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 9100c0ce554c:34811 (size: 78.6 KiB, free: 434.3 MiB)
+23/11/29 02:42:50 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:42:50 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:42:50 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:42:50 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (9100c0ce554c, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:42:50 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:42:50 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:42:50 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:42:50 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:42:50 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:42:50 INFO CodeGenerator: Code generated in 60.690703 ms
+23/11/29 02:42:50 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 9100c0ce554c:34811 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:42:50 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 9100c0ce554c:34811 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:42:51 INFO FileOutputCommitter: Saved output of task 'attempt_202311290242501152815162016228824_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290242501152815162016228824_0001_m_000000
+23/11/29 02:42:51 INFO SparkHadoopMapRedUtil: attempt_202311290242501152815162016228824_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:42:51 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:42:51 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 830 ms on 9100c0ce554c (executor driver) (1/1)
+23/11/29 02:42:51 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:42:51 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.875 s
+23/11/29 02:42:51 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:42:51 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:42:51 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.879911 s
+23/11/29 02:42:51 INFO FileFormatWriter: Start to commit write Job 8ca2fed6-75a5-4262-ace2-78076ccf2909.
+23/11/29 02:42:51 INFO FileFormatWriter: Write Job 8ca2fed6-75a5-4262-ace2-78076ccf2909 committed. Elapsed time: 10 ms.
+23/11/29 02:42:51 INFO FileFormatWriter: Finished processing stats for write job 8ca2fed6-75a5-4262-ace2-78076ccf2909.
+23/11/29 02:42:51 INFO SparkUI: Stopped Spark web UI at http://9100c0ce554c:4040
+23/11/29 02:42:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:42:51 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:42:51 INFO BlockManager: BlockManager stopped
+23/11/29 02:42:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:42:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:42:51 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 4
+23/11/29 02:42:51 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:42:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-c45f579d-5bd0-41c5-8cae-ca041f794f1a
+23/11/29 02:42:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-edeead43-d6d3-43de-9be2-bf23692a015b
+Execution 2:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-65b9a798-3559-4099-a6d7-c41cbb1bb0c2;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (704ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (3736ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (428ms)
+:: resolution report :: resolve 7597ms :: artifacts dl 4884ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-65b9a798-3559-4099-a6d7-c41cbb1bb0c2
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/10ms)
+23/11/29 02:43:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:43:07 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:43:07 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:07 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:43:07 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:07 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:43:07 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:43:07 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:43:07 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:43:07 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:43:07 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:43:07 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:43:07 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:43:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:43:07 INFO Utils: Successfully started service 'sparkDriver' on port 40539.
+23/11/29 02:43:07 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:43:07 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:43:07 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:43:07 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:43:07 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:43:07 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-5d07c19f-d1f4-447d-84ce-21e529709dc7
+23/11/29 02:43:07 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:43:07 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:43:08 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:43:08 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://4bf6efb320af:40539/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225787157
+23/11/29 02:43:08 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://4bf6efb320af:40539/jars/org.tukaani_xz-1.9.jar with timestamp 1701225787157
+23/11/29 02:43:08 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://4bf6efb320af:40539/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225787157
+23/11/29 02:43:08 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://4bf6efb320af:40539/jars/spark.jar with timestamp 1701225787157
+23/11/29 02:43:08 INFO Executor: Starting executor ID driver on host 4bf6efb320af
+23/11/29 02:43:08 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:43:08 INFO Executor: Fetching spark://4bf6efb320af:40539/jars/spark.jar with timestamp 1701225787157
+23/11/29 02:43:08 INFO TransportClientFactory: Successfully created connection to 4bf6efb320af/172.17.0.2:40539 after 59 ms (0 ms spent in bootstraps)
+23/11/29 02:43:08 INFO Utils: Fetching spark://4bf6efb320af:40539/jars/spark.jar to /tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/fetchFileTemp8164990701821575666.tmp
+23/11/29 02:43:09 INFO Executor: Adding file:/tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/spark.jar to class loader
+23/11/29 02:43:09 INFO Executor: Fetching spark://4bf6efb320af:40539/jars/org.tukaani_xz-1.9.jar with timestamp 1701225787157
+23/11/29 02:43:09 INFO Utils: Fetching spark://4bf6efb320af:40539/jars/org.tukaani_xz-1.9.jar to /tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/fetchFileTemp2394782160085744811.tmp
+23/11/29 02:43:09 INFO Executor: Adding file:/tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:43:09 INFO Executor: Fetching spark://4bf6efb320af:40539/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225787157
+23/11/29 02:43:09 INFO Utils: Fetching spark://4bf6efb320af:40539/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/fetchFileTemp5947772773047580751.tmp
+23/11/29 02:43:09 INFO Executor: Adding file:/tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:43:09 INFO Executor: Fetching spark://4bf6efb320af:40539/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225787157
+23/11/29 02:43:09 INFO Utils: Fetching spark://4bf6efb320af:40539/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/fetchFileTemp8972375906077252389.tmp
+23/11/29 02:43:09 INFO Executor: Adding file:/tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d/userFiles-912ac495-4b38-480f-aa79-bcb838eb1783/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:43:09 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39437.
+23/11/29 02:43:09 INFO NettyBlockTransferService: Server created on 4bf6efb320af:39437
+23/11/29 02:43:09 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:43:09 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 4bf6efb320af, 39437, None)
+23/11/29 02:43:09 INFO BlockManagerMasterEndpoint: Registering block manager 4bf6efb320af:39437 with 434.4 MiB RAM, BlockManagerId(driver, 4bf6efb320af, 39437, None)
+23/11/29 02:43:09 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 4bf6efb320af, 39437, None)
+23/11/29 02:43:09 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 4bf6efb320af, 39437, None)
+23/11/29 02:43:09 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:43:09 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:43:10 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:43:11 INFO InMemoryFileIndex: It took 91 ms to list leaf files for 1 paths.
+23/11/29 02:43:13 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:43:13 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:43:13 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:43:13 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:43:13 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:43:13 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 4bf6efb320af:39437 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:43:13 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:43:13 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:43:14 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:43:14 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:43:14 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:43:14 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:43:14 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:43:14 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:43:14 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:43:14 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:43:14 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 4bf6efb320af:39437 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:43:14 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:43:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:43:14 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:43:14 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (4bf6efb320af, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:43:14 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:43:14 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:43:14 INFO CodeGenerator: Code generated in 152.099666 ms
+23/11/29 02:43:14 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:43:14 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 425 ms on 4bf6efb320af (executor driver) (1/1)
+23/11/29 02:43:14 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:43:14 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.527 s
+23/11/29 02:43:14 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:43:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:43:14 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.570550 s
+23/11/29 02:43:14 INFO CodeGenerator: Code generated in 16.009759 ms
+23/11/29 02:43:14 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:43:14 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:43:14 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:43:14 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:43:15 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:43:15 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:43:15 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:43:15 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:43:15 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:43:15 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:43:15 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:43:15 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:43:15 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 4bf6efb320af:39437 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:43:15 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:43:15 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:43:15 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:43:15 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:43:15 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:43:15 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:43:15 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:43:15 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:43:15 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:43:15 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.7 KiB, free 433.6 MiB)
+23/11/29 02:43:15 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 4bf6efb320af:39437 (size: 78.7 KiB, free: 434.3 MiB)
+23/11/29 02:43:15 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:43:15 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:43:15 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:43:15 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (4bf6efb320af, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:43:15 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:43:15 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:43:15 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:43:15 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:43:15 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 4bf6efb320af:39437 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:43:15 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 4bf6efb320af:39437 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:43:15 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:43:15 INFO CodeGenerator: Code generated in 61.234756 ms
+23/11/29 02:43:16 INFO FileOutputCommitter: Saved output of task 'attempt_202311290243152075663826061083718_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290243152075663826061083718_0001_m_000000
+23/11/29 02:43:16 INFO SparkHadoopMapRedUtil: attempt_202311290243152075663826061083718_0001_m_000000_1: Committed. Elapsed time: 1 ms.
+23/11/29 02:43:16 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:43:16 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 855 ms on 4bf6efb320af (executor driver) (1/1)
+23/11/29 02:43:16 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:43:16 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.907 s
+23/11/29 02:43:16 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:43:16 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:43:16 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.913074 s
+23/11/29 02:43:16 INFO FileFormatWriter: Start to commit write Job 858a8f48-e7b0-4ca4-8bb6-50c09585f7a1.
+23/11/29 02:43:16 INFO FileFormatWriter: Write Job 858a8f48-e7b0-4ca4-8bb6-50c09585f7a1 committed. Elapsed time: 14 ms.
+23/11/29 02:43:16 INFO FileFormatWriter: Finished processing stats for write job 858a8f48-e7b0-4ca4-8bb6-50c09585f7a1.
+23/11/29 02:43:16 INFO SparkUI: Stopped Spark web UI at http://4bf6efb320af:4040
+23/11/29 02:43:16 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:43:16 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:43:16 INFO BlockManager: BlockManager stopped
+23/11/29 02:43:16 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:43:16 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:43:16 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:43:16 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:43:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-1adb98d6-aeff-469c-b8b5-4d33ad478c1d
+23/11/29 02:43:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-b7458a59-f28f-48d4-8c39-f9889a4b28b8
+Execution 3:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-90ce41df-f7c8-48b4-833f-639f3cdbcaef;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (490ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (372ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (1317ms)
+:: resolution report :: resolve 7102ms :: artifacts dl 2196ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-90ce41df-f7c8-48b4-833f-639f3cdbcaef
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/10ms)
+23/11/29 02:43:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:43:29 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:43:29 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:29 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:43:29 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:29 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:43:29 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:43:29 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:43:29 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:43:29 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:43:29 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:43:29 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:43:29 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:43:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:43:30 INFO Utils: Successfully started service 'sparkDriver' on port 35579.
+23/11/29 02:43:30 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:43:30 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:43:30 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:43:30 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:43:30 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:43:30 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e11c2d77-846d-449f-8dc2-650d5e8eff03
+23/11/29 02:43:30 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:43:30 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:43:30 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:43:30 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://e4aa0decbaaa:35579/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225809538
+23/11/29 02:43:30 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://e4aa0decbaaa:35579/jars/org.tukaani_xz-1.9.jar with timestamp 1701225809538
+23/11/29 02:43:30 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://e4aa0decbaaa:35579/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225809538
+23/11/29 02:43:30 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://e4aa0decbaaa:35579/jars/spark.jar with timestamp 1701225809538
+23/11/29 02:43:30 INFO Executor: Starting executor ID driver on host e4aa0decbaaa
+23/11/29 02:43:30 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:43:30 INFO Executor: Fetching spark://e4aa0decbaaa:35579/jars/spark.jar with timestamp 1701225809538
+23/11/29 02:43:30 INFO TransportClientFactory: Successfully created connection to e4aa0decbaaa/172.17.0.2:35579 after 48 ms (0 ms spent in bootstraps)
+23/11/29 02:43:30 INFO Utils: Fetching spark://e4aa0decbaaa:35579/jars/spark.jar to /tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/fetchFileTemp3974494375099784466.tmp
+23/11/29 02:43:31 INFO Executor: Adding file:/tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/spark.jar to class loader
+23/11/29 02:43:31 INFO Executor: Fetching spark://e4aa0decbaaa:35579/jars/org.tukaani_xz-1.9.jar with timestamp 1701225809538
+23/11/29 02:43:31 INFO Utils: Fetching spark://e4aa0decbaaa:35579/jars/org.tukaani_xz-1.9.jar to /tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/fetchFileTemp8690957628550537732.tmp
+23/11/29 02:43:31 INFO Executor: Adding file:/tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:43:31 INFO Executor: Fetching spark://e4aa0decbaaa:35579/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225809538
+23/11/29 02:43:31 INFO Utils: Fetching spark://e4aa0decbaaa:35579/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/fetchFileTemp2132831705477653449.tmp
+23/11/29 02:43:31 INFO Executor: Adding file:/tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:43:31 INFO Executor: Fetching spark://e4aa0decbaaa:35579/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225809538
+23/11/29 02:43:31 INFO Utils: Fetching spark://e4aa0decbaaa:35579/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/fetchFileTemp5110766363462439126.tmp
+23/11/29 02:43:31 INFO Executor: Adding file:/tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60/userFiles-d68e608b-8dcb-48f8-bad9-a050f8bf56d6/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:43:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32837.
+23/11/29 02:43:31 INFO NettyBlockTransferService: Server created on e4aa0decbaaa:32837
+23/11/29 02:43:31 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:43:31 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, e4aa0decbaaa, 32837, None)
+23/11/29 02:43:31 INFO BlockManagerMasterEndpoint: Registering block manager e4aa0decbaaa:32837 with 434.4 MiB RAM, BlockManagerId(driver, e4aa0decbaaa, 32837, None)
+23/11/29 02:43:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, e4aa0decbaaa, 32837, None)
+23/11/29 02:43:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, e4aa0decbaaa, 32837, None)
+23/11/29 02:43:31 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:43:31 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:43:32 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:43:32 INFO InMemoryFileIndex: It took 40 ms to list leaf files for 1 paths.
+23/11/29 02:43:35 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:43:35 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:43:35 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:43:36 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:43:36 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 434.2 MiB)
+23/11/29 02:43:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on e4aa0decbaaa:32837 (size: 34.0 KiB, free: 434.4 MiB)
+23/11/29 02:43:36 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:43:36 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:43:36 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:43:36 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:43:36 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:43:36 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:43:36 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:43:36 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:43:36 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:43:36 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:43:36 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on e4aa0decbaaa:32837 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:43:36 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:43:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:43:36 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:43:36 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (e4aa0decbaaa, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:43:36 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:43:36 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:43:36 INFO CodeGenerator: Code generated in 212.636407 ms
+23/11/29 02:43:36 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2199 bytes result sent to driver
+23/11/29 02:43:36 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 499 ms on e4aa0decbaaa (executor driver) (1/1)
+23/11/29 02:43:36 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:43:37 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.611 s
+23/11/29 02:43:37 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:43:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:43:37 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.661356 s
+23/11/29 02:43:37 INFO CodeGenerator: Code generated in 14.071557 ms
+23/11/29 02:43:37 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:43:37 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:43:37 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:43:37 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:43:37 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:43:37 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:43:37 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:43:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:43:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:43:37 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:43:37 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:43:37 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 433.9 MiB)
+23/11/29 02:43:37 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on e4aa0decbaaa:32837 (size: 34.0 KiB, free: 434.3 MiB)
+23/11/29 02:43:37 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:43:37 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:43:37 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:43:37 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:43:37 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:43:37 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:43:37 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:43:37 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:43:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:43:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.7 KiB, free 433.6 MiB)
+23/11/29 02:43:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on e4aa0decbaaa:32837 (size: 78.7 KiB, free: 434.3 MiB)
+23/11/29 02:43:37 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:43:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:43:37 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:43:37 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (e4aa0decbaaa, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:43:37 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:43:37 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:43:37 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:43:37 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:43:37 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:43:37 INFO CodeGenerator: Code generated in 75.253834 ms
+23/11/29 02:43:38 INFO BlockManagerInfo: Removed broadcast_0_piece0 on e4aa0decbaaa:32837 in memory (size: 34.0 KiB, free: 434.3 MiB)
+23/11/29 02:43:38 INFO BlockManagerInfo: Removed broadcast_1_piece0 on e4aa0decbaaa:32837 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:43:38 INFO FileOutputCommitter: Saved output of task 'attempt_202311290243371381017849473901332_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290243371381017849473901332_0001_m_000000
+23/11/29 02:43:38 INFO SparkHadoopMapRedUtil: attempt_202311290243371381017849473901332_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:43:38 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:43:38 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 922 ms on e4aa0decbaaa (executor driver) (1/1)
+23/11/29 02:43:38 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:43:38 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.972 s
+23/11/29 02:43:38 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:43:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:43:38 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.978362 s
+23/11/29 02:43:38 INFO FileFormatWriter: Start to commit write Job 582a5924-1673-4fcc-9115-2693f18f607a.
+23/11/29 02:43:38 INFO FileFormatWriter: Write Job 582a5924-1673-4fcc-9115-2693f18f607a committed. Elapsed time: 12 ms.
+23/11/29 02:43:38 INFO FileFormatWriter: Finished processing stats for write job 582a5924-1673-4fcc-9115-2693f18f607a.
+23/11/29 02:43:38 INFO SparkUI: Stopped Spark web UI at http://e4aa0decbaaa:4040
+23/11/29 02:43:38 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:43:38 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:43:38 INFO BlockManager: BlockManager stopped
+23/11/29 02:43:38 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:43:38 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:43:38 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:43:38 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:43:38 INFO ShutdownHookManager: Deleting directory /tmp/spark-42d4d833-7ea0-4050-88db-32be8fe416eb
+23/11/29 02:43:38 INFO ShutdownHookManager: Deleting directory /tmp/spark-c4ea4a50-e1aa-4f15-906d-5505ddb9ea60
+Execution 4:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-2ca1f991-3d3d-40a4-bc75-69359c502179;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (830ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (634ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (695ms)
+:: resolution report :: resolve 9620ms :: artifacts dl 2177ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-2ca1f991-3d3d-40a4-bc75-69359c502179
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/18ms)
+23/11/29 02:43:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:43:53 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:43:53 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:53 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:43:53 INFO ResourceUtils: ==============================================================
+23/11/29 02:43:53 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:43:54 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:43:54 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:43:54 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:43:54 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:43:54 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:43:54 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:43:54 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:43:54 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:43:54 INFO Utils: Successfully started service 'sparkDriver' on port 37671.
+23/11/29 02:43:54 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:43:54 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:43:54 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:43:54 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:43:54 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:43:54 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-08090e67-e89e-4bb7-8b4d-113c4aaaed9f
+23/11/29 02:43:54 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:43:54 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:43:54 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:43:54 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://7eabc8c677e2:37671/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225833950
+23/11/29 02:43:54 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://7eabc8c677e2:37671/jars/org.tukaani_xz-1.9.jar with timestamp 1701225833950
+23/11/29 02:43:54 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://7eabc8c677e2:37671/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225833950
+23/11/29 02:43:54 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://7eabc8c677e2:37671/jars/spark.jar with timestamp 1701225833950
+23/11/29 02:43:54 INFO Executor: Starting executor ID driver on host 7eabc8c677e2
+23/11/29 02:43:54 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:43:54 INFO Executor: Fetching spark://7eabc8c677e2:37671/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225833950
+23/11/29 02:43:54 INFO TransportClientFactory: Successfully created connection to 7eabc8c677e2/172.17.0.2:37671 after 30 ms (0 ms spent in bootstraps)
+23/11/29 02:43:55 INFO Utils: Fetching spark://7eabc8c677e2:37671/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/fetchFileTemp9682591514292099442.tmp
+23/11/29 02:43:55 INFO Executor: Adding file:/tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:43:55 INFO Executor: Fetching spark://7eabc8c677e2:37671/jars/org.tukaani_xz-1.9.jar with timestamp 1701225833950
+23/11/29 02:43:55 INFO Utils: Fetching spark://7eabc8c677e2:37671/jars/org.tukaani_xz-1.9.jar to /tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/fetchFileTemp4880594181573062170.tmp
+23/11/29 02:43:55 INFO Executor: Adding file:/tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:43:55 INFO Executor: Fetching spark://7eabc8c677e2:37671/jars/spark.jar with timestamp 1701225833950
+23/11/29 02:43:55 INFO Utils: Fetching spark://7eabc8c677e2:37671/jars/spark.jar to /tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/fetchFileTemp16076777581754411973.tmp
+23/11/29 02:43:55 INFO Executor: Adding file:/tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/spark.jar to class loader
+23/11/29 02:43:55 INFO Executor: Fetching spark://7eabc8c677e2:37671/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225833950
+23/11/29 02:43:55 INFO Utils: Fetching spark://7eabc8c677e2:37671/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/fetchFileTemp5672799627677567590.tmp
+23/11/29 02:43:55 INFO Executor: Adding file:/tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848/userFiles-8741f84e-03f7-4f33-ac83-bbe65dc40f26/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:43:55 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35639.
+23/11/29 02:43:55 INFO NettyBlockTransferService: Server created on 7eabc8c677e2:35639
+23/11/29 02:43:55 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:43:55 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 7eabc8c677e2, 35639, None)
+23/11/29 02:43:55 INFO BlockManagerMasterEndpoint: Registering block manager 7eabc8c677e2:35639 with 434.4 MiB RAM, BlockManagerId(driver, 7eabc8c677e2, 35639, None)
+23/11/29 02:43:55 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 7eabc8c677e2, 35639, None)
+23/11/29 02:43:55 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 7eabc8c677e2, 35639, None)
+23/11/29 02:43:55 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:43:55 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:43:56 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:43:57 INFO InMemoryFileIndex: It took 85 ms to list leaf files for 1 paths.
+23/11/29 02:43:59 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:43:59 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:43:59 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:43:59 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:43:59 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:43:59 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 7eabc8c677e2:35639 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:43:59 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:43:59 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:00 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:44:00 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:44:00 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:44:00 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:00 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:00 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:44:00 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:44:00 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:44:00 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 7eabc8c677e2:35639 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:44:00 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:00 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:00 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:44:00 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (7eabc8c677e2, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:44:00 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:44:00 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:44:00 INFO CodeGenerator: Code generated in 172.006081 ms
+23/11/29 02:44:00 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2199 bytes result sent to driver
+23/11/29 02:44:00 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 454 ms on 7eabc8c677e2 (executor driver) (1/1)
+23/11/29 02:44:00 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:44:00 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.551 s
+23/11/29 02:44:00 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:00 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:44:00 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.592751 s
+23/11/29 02:44:00 INFO CodeGenerator: Code generated in 18.974757 ms
+23/11/29 02:44:00 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:44:01 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:44:01 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:44:01 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:44:01 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:44:01 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:44:01 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:44:01 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:01 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:01 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:01 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:44:01 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:44:01 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 7eabc8c677e2:35639 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:44:01 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:44:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:01 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:44:01 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:44:01 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:44:01 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:01 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:01 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:44:01 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:44:01 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.6 KiB, free 433.6 MiB)
+23/11/29 02:44:01 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 7eabc8c677e2:35639 (size: 78.6 KiB, free: 434.3 MiB)
+23/11/29 02:44:01 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:01 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:01 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:44:01 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (7eabc8c677e2, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:44:01 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:44:01 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:01 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:01 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:01 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:44:01 INFO CodeGenerator: Code generated in 73.547341 ms
+23/11/29 02:44:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 7eabc8c677e2:35639 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:44:01 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 7eabc8c677e2:35639 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:44:02 INFO FileOutputCommitter: Saved output of task 'attempt_202311290244016674882439320349238_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290244016674882439320349238_0001_m_000000
+23/11/29 02:44:02 INFO SparkHadoopMapRedUtil: attempt_202311290244016674882439320349238_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:44:02 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:44:02 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 919 ms on 7eabc8c677e2 (executor driver) (1/1)
+23/11/29 02:44:02 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:44:02 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.973 s
+23/11/29 02:44:02 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:02 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:44:02 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.978229 s
+23/11/29 02:44:02 INFO FileFormatWriter: Start to commit write Job 0aee6a77-b6ac-4ce5-bcd6-a4cebadc26e3.
+23/11/29 02:44:02 INFO FileFormatWriter: Write Job 0aee6a77-b6ac-4ce5-bcd6-a4cebadc26e3 committed. Elapsed time: 12 ms.
+23/11/29 02:44:02 INFO FileFormatWriter: Finished processing stats for write job 0aee6a77-b6ac-4ce5-bcd6-a4cebadc26e3.
+23/11/29 02:44:02 INFO SparkUI: Stopped Spark web UI at http://7eabc8c677e2:4040
+23/11/29 02:44:02 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:44:02 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:44:02 INFO BlockManager: BlockManager stopped
+23/11/29 02:44:02 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:44:02 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:44:02 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:44:02 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:44:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-0c84c877-a9cd-4d76-bf81-09f1df2b0af8
+23/11/29 02:44:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-7036489b-01b9-4833-8374-5d1deeb17848
+Execution 5:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-a5f6434c-37ec-4ec7-90aa-eea095906c90;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (888ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (526ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (382ms)
+:: resolution report :: resolve 6987ms :: artifacts dl 1803ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-a5f6434c-37ec-4ec7-90aa-eea095906c90
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/14ms)
+23/11/29 02:44:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:44:14 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:44:14 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:14 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:44:14 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:14 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:44:14 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:44:14 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:44:14 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:44:14 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:44:14 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:44:14 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:44:14 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:44:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:44:15 INFO Utils: Successfully started service 'sparkDriver' on port 41013.
+23/11/29 02:44:15 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:44:15 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:44:15 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:44:15 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:44:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:44:15 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8cae6477-c524-4214-8e47-075d4d743cc4
+23/11/29 02:44:15 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:44:15 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:44:15 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:44:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://2a077aaab327:41013/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://2a077aaab327:41013/jars/org.tukaani_xz-1.9.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://2a077aaab327:41013/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://2a077aaab327:41013/jars/spark.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO Executor: Starting executor ID driver on host 2a077aaab327
+23/11/29 02:44:15 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:44:15 INFO Executor: Fetching spark://2a077aaab327:41013/jars/org.tukaani_xz-1.9.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO TransportClientFactory: Successfully created connection to 2a077aaab327/172.17.0.2:41013 after 29 ms (0 ms spent in bootstraps)
+23/11/29 02:44:15 INFO Utils: Fetching spark://2a077aaab327:41013/jars/org.tukaani_xz-1.9.jar to /tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/fetchFileTemp14929898028946368624.tmp
+23/11/29 02:44:15 INFO Executor: Adding file:/tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:44:15 INFO Executor: Fetching spark://2a077aaab327:41013/jars/spark.jar with timestamp 1701225854546
+23/11/29 02:44:15 INFO Utils: Fetching spark://2a077aaab327:41013/jars/spark.jar to /tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/fetchFileTemp8843863797234631873.tmp
+23/11/29 02:44:16 INFO Executor: Adding file:/tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/spark.jar to class loader
+23/11/29 02:44:16 INFO Executor: Fetching spark://2a077aaab327:41013/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225854546
+23/11/29 02:44:16 INFO Utils: Fetching spark://2a077aaab327:41013/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/fetchFileTemp14081895601424490889.tmp
+23/11/29 02:44:16 INFO Executor: Adding file:/tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:44:16 INFO Executor: Fetching spark://2a077aaab327:41013/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225854546
+23/11/29 02:44:16 INFO Utils: Fetching spark://2a077aaab327:41013/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/fetchFileTemp14545377154499482994.tmp
+23/11/29 02:44:16 INFO Executor: Adding file:/tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834/userFiles-7339a1f8-8d17-42ff-b6d7-361a5000376e/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:44:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35205.
+23/11/29 02:44:16 INFO NettyBlockTransferService: Server created on 2a077aaab327:35205
+23/11/29 02:44:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:44:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2a077aaab327, 35205, None)
+23/11/29 02:44:16 INFO BlockManagerMasterEndpoint: Registering block manager 2a077aaab327:35205 with 434.4 MiB RAM, BlockManagerId(driver, 2a077aaab327, 35205, None)
+23/11/29 02:44:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2a077aaab327, 35205, None)
+23/11/29 02:44:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2a077aaab327, 35205, None)
+23/11/29 02:44:16 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:44:16 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:44:17 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:44:18 INFO InMemoryFileIndex: It took 48 ms to list leaf files for 1 paths.
+23/11/29 02:44:20 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:44:20 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:44:20 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:44:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:44:21 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 434.2 MiB)
+23/11/29 02:44:21 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2a077aaab327:35205 (size: 34.0 KiB, free: 434.4 MiB)
+23/11/29 02:44:21 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:44:21 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:21 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:44:21 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:44:21 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:44:21 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:21 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:21 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:44:21 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:44:21 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:44:21 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2a077aaab327:35205 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:44:21 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:21 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:21 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:44:21 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (2a077aaab327, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:44:21 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:44:21 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:44:21 INFO CodeGenerator: Code generated in 165.091721 ms
+23/11/29 02:44:21 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:44:21 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 430 ms on 2a077aaab327 (executor driver) (1/1)
+23/11/29 02:44:21 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:44:21 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.557 s
+23/11/29 02:44:21 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:21 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:44:21 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.611812 s
+23/11/29 02:44:21 INFO CodeGenerator: Code generated in 13.259837 ms
+23/11/29 02:44:21 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:44:22 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:44:22 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:44:22 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:44:22 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:44:22 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:44:22 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:44:22 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:22 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:22 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:22 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:44:22 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:44:22 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2a077aaab327:35205 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:44:22 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:44:22 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:22 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:44:22 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:44:22 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:44:22 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:22 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:22 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:44:22 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:44:22 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.7 KiB, free 433.6 MiB)
+23/11/29 02:44:22 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2a077aaab327:35205 (size: 78.7 KiB, free: 434.3 MiB)
+23/11/29 02:44:22 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:22 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:22 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:44:22 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (2a077aaab327, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:44:22 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:44:22 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:22 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:22 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:22 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:44:22 INFO CodeGenerator: Code generated in 69.835485 ms
+23/11/29 02:44:22 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 2a077aaab327:35205 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:44:22 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 2a077aaab327:35205 in memory (size: 34.0 KiB, free: 434.3 MiB)
+23/11/29 02:44:23 INFO FileOutputCommitter: Saved output of task 'attempt_202311290244222830825563081618147_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290244222830825563081618147_0001_m_000000
+23/11/29 02:44:23 INFO SparkHadoopMapRedUtil: attempt_202311290244222830825563081618147_0001_m_000000_1: Committed. Elapsed time: 1 ms.
+23/11/29 02:44:23 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:44:23 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 829 ms on 2a077aaab327 (executor driver) (1/1)
+23/11/29 02:44:23 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:44:23 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.876 s
+23/11/29 02:44:23 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:23 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:44:23 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.881360 s
+23/11/29 02:44:23 INFO FileFormatWriter: Start to commit write Job 62e991d3-593f-4873-95fd-d390933af6c5.
+23/11/29 02:44:23 INFO FileFormatWriter: Write Job 62e991d3-593f-4873-95fd-d390933af6c5 committed. Elapsed time: 11 ms.
+23/11/29 02:44:23 INFO FileFormatWriter: Finished processing stats for write job 62e991d3-593f-4873-95fd-d390933af6c5.
+23/11/29 02:44:23 INFO SparkUI: Stopped Spark web UI at http://2a077aaab327:4040
+23/11/29 02:44:23 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:44:23 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:44:23 INFO BlockManager: BlockManager stopped
+23/11/29 02:44:23 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:44:23 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:44:23 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:44:23 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:44:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-5f014d77-010f-4aa8-84f4-e408d7bbc834
+23/11/29 02:44:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-6a283a98-97fa-4a07-8358-efc711c26e53
+Execution 6:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-f428d88a-0365-4c4e-bf8d-5db9cb3f51b0;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (465ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (339ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (318ms)
+:: resolution report :: resolve 7421ms :: artifacts dl 1136ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-f428d88a-0365-4c4e-bf8d-5db9cb3f51b0
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/13ms)
+23/11/29 02:44:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:44:35 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:44:35 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:35 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:44:35 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:35 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:44:35 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:44:35 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:44:35 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:44:35 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:44:35 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:44:35 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:44:35 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:44:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:44:36 INFO Utils: Successfully started service 'sparkDriver' on port 33065.
+23/11/29 02:44:36 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:44:36 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:44:36 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:44:36 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:44:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:44:36 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-36701ce0-62d3-470a-9bfb-2341b9fa04f5
+23/11/29 02:44:36 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:44:36 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:44:36 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:44:36 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://f3885a70e3c8:33065/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225875652
+23/11/29 02:44:36 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://f3885a70e3c8:33065/jars/org.tukaani_xz-1.9.jar with timestamp 1701225875652
+23/11/29 02:44:36 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://f3885a70e3c8:33065/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225875652
+23/11/29 02:44:36 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://f3885a70e3c8:33065/jars/spark.jar with timestamp 1701225875652
+23/11/29 02:44:36 INFO Executor: Starting executor ID driver on host f3885a70e3c8
+23/11/29 02:44:36 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:44:36 INFO Executor: Fetching spark://f3885a70e3c8:33065/jars/spark.jar with timestamp 1701225875652
+23/11/29 02:44:36 INFO TransportClientFactory: Successfully created connection to f3885a70e3c8/172.17.0.2:33065 after 29 ms (0 ms spent in bootstraps)
+23/11/29 02:44:36 INFO Utils: Fetching spark://f3885a70e3c8:33065/jars/spark.jar to /tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/fetchFileTemp7396841858414469083.tmp
+23/11/29 02:44:37 INFO Executor: Adding file:/tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/spark.jar to class loader
+23/11/29 02:44:37 INFO Executor: Fetching spark://f3885a70e3c8:33065/jars/org.tukaani_xz-1.9.jar with timestamp 1701225875652
+23/11/29 02:44:37 INFO Utils: Fetching spark://f3885a70e3c8:33065/jars/org.tukaani_xz-1.9.jar to /tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/fetchFileTemp6727735974424752578.tmp
+23/11/29 02:44:37 INFO Executor: Adding file:/tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:44:37 INFO Executor: Fetching spark://f3885a70e3c8:33065/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225875652
+23/11/29 02:44:37 INFO Utils: Fetching spark://f3885a70e3c8:33065/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/fetchFileTemp10708910155062441058.tmp
+23/11/29 02:44:37 INFO Executor: Adding file:/tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:44:37 INFO Executor: Fetching spark://f3885a70e3c8:33065/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225875652
+23/11/29 02:44:37 INFO Utils: Fetching spark://f3885a70e3c8:33065/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/fetchFileTemp556603356477521723.tmp
+23/11/29 02:44:37 INFO Executor: Adding file:/tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6/userFiles-7cf68209-14ae-486b-8ed3-72dcfa499402/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:44:37 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38223.
+23/11/29 02:44:37 INFO NettyBlockTransferService: Server created on f3885a70e3c8:38223
+23/11/29 02:44:37 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:44:37 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, f3885a70e3c8, 38223, None)
+23/11/29 02:44:37 INFO BlockManagerMasterEndpoint: Registering block manager f3885a70e3c8:38223 with 434.4 MiB RAM, BlockManagerId(driver, f3885a70e3c8, 38223, None)
+23/11/29 02:44:37 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, f3885a70e3c8, 38223, None)
+23/11/29 02:44:37 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, f3885a70e3c8, 38223, None)
+23/11/29 02:44:37 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:44:37 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:44:38 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:44:38 INFO InMemoryFileIndex: It took 41 ms to list leaf files for 1 paths.
+23/11/29 02:44:40 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:44:40 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:44:40 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:44:41 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:44:41 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:44:41 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on f3885a70e3c8:38223 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:44:41 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:44:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:41 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:44:41 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:44:41 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:44:41 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:41 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:41 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:44:41 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:44:41 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:44:41 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on f3885a70e3c8:38223 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:44:41 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:41 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:44:41 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (f3885a70e3c8, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:44:41 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:44:41 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:44:42 INFO CodeGenerator: Code generated in 142.446094 ms
+23/11/29 02:44:42 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2199 bytes result sent to driver
+23/11/29 02:44:42 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 442 ms on f3885a70e3c8 (executor driver) (1/1)
+23/11/29 02:44:42 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:44:42 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.549 s
+23/11/29 02:44:42 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:44:42 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.589007 s
+23/11/29 02:44:42 INFO CodeGenerator: Code generated in 14.54338 ms
+23/11/29 02:44:42 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:44:42 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:44:42 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:44:42 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:44:42 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:44:42 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:44:42 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:44:42 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:42 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:42 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:42 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:44:42 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:44:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on f3885a70e3c8:38223 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:44:42 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:44:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:44:42 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:44:42 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:44:42 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:44:42 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:44:42 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:44:42 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:44:42 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:44:42 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.7 KiB, free 433.6 MiB)
+23/11/29 02:44:42 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on f3885a70e3c8:38223 (size: 78.7 KiB, free: 434.3 MiB)
+23/11/29 02:44:42 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:44:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:44:42 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:44:42 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (f3885a70e3c8, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:44:42 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:44:42 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:44:42 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:44:42 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:44:42 INFO BlockManagerInfo: Removed broadcast_0_piece0 on f3885a70e3c8:38223 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:44:42 INFO BlockManagerInfo: Removed broadcast_1_piece0 on f3885a70e3c8:38223 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:44:42 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:44:42 INFO CodeGenerator: Code generated in 68.105258 ms
+23/11/29 02:44:43 INFO FileOutputCommitter: Saved output of task 'attempt_202311290244421798604951880354476_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290244421798604951880354476_0001_m_000000
+23/11/29 02:44:43 INFO SparkHadoopMapRedUtil: attempt_202311290244421798604951880354476_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:44:43 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:44:43 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 787 ms on f3885a70e3c8 (executor driver) (1/1)
+23/11/29 02:44:43 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:44:43 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.839 s
+23/11/29 02:44:43 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:44:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:44:43 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.845309 s
+23/11/29 02:44:43 INFO FileFormatWriter: Start to commit write Job d8588d70-c868-4213-a400-81e846c50eaf.
+23/11/29 02:44:43 INFO FileFormatWriter: Write Job d8588d70-c868-4213-a400-81e846c50eaf committed. Elapsed time: 20 ms.
+23/11/29 02:44:43 INFO FileFormatWriter: Finished processing stats for write job d8588d70-c868-4213-a400-81e846c50eaf.
+23/11/29 02:44:43 INFO SparkUI: Stopped Spark web UI at http://f3885a70e3c8:4040
+23/11/29 02:44:43 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:44:43 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:44:43 INFO BlockManager: BlockManager stopped
+23/11/29 02:44:43 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:44:43 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:44:43 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:44:43 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:44:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-ddb0eab7-f889-4b33-8434-a050026a2b07
+23/11/29 02:44:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-ce6728d1-80ed-498c-ad50-68ebad3821d6
+Execution 7:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-8eacefd1-b434-41c1-805f-6d88337e012a;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (470ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (359ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (325ms)
+:: resolution report :: resolve 7173ms :: artifacts dl 1175ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-8eacefd1-b434-41c1-805f-6d88337e012a
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/13ms)
+23/11/29 02:44:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:44:55 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:44:55 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:55 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:44:55 INFO ResourceUtils: ==============================================================
+23/11/29 02:44:55 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:44:55 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:44:55 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:44:55 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:44:55 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:44:55 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:44:55 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:44:55 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:44:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:44:56 INFO Utils: Successfully started service 'sparkDriver' on port 45445.
+23/11/29 02:44:56 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:44:56 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:44:56 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:44:56 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:44:56 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:44:56 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b883719a-d279-4444-816e-13bb83e38d2c
+23/11/29 02:44:56 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:44:56 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:44:56 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:44:56 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://2c8d08b25e9b:45445/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://2c8d08b25e9b:45445/jars/org.tukaani_xz-1.9.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://2c8d08b25e9b:45445/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://2c8d08b25e9b:45445/jars/spark.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO Executor: Starting executor ID driver on host 2c8d08b25e9b
+23/11/29 02:44:56 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:44:56 INFO Executor: Fetching spark://2c8d08b25e9b:45445/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO TransportClientFactory: Successfully created connection to 2c8d08b25e9b/172.17.0.2:45445 after 32 ms (0 ms spent in bootstraps)
+23/11/29 02:44:56 INFO Utils: Fetching spark://2c8d08b25e9b:45445/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/fetchFileTemp2645282081390991852.tmp
+23/11/29 02:44:56 INFO Executor: Adding file:/tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:44:56 INFO Executor: Fetching spark://2c8d08b25e9b:45445/jars/spark.jar with timestamp 1701225895526
+23/11/29 02:44:56 INFO Utils: Fetching spark://2c8d08b25e9b:45445/jars/spark.jar to /tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/fetchFileTemp15777296715062905928.tmp
+23/11/29 02:44:57 INFO Executor: Adding file:/tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/spark.jar to class loader
+23/11/29 02:44:57 INFO Executor: Fetching spark://2c8d08b25e9b:45445/jars/org.tukaani_xz-1.9.jar with timestamp 1701225895526
+23/11/29 02:44:57 INFO Utils: Fetching spark://2c8d08b25e9b:45445/jars/org.tukaani_xz-1.9.jar to /tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/fetchFileTemp12822548446314115962.tmp
+23/11/29 02:44:57 INFO Executor: Adding file:/tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:44:57 INFO Executor: Fetching spark://2c8d08b25e9b:45445/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225895526
+23/11/29 02:44:57 INFO Utils: Fetching spark://2c8d08b25e9b:45445/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/fetchFileTemp4609837492560880311.tmp
+23/11/29 02:44:57 INFO Executor: Adding file:/tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6/userFiles-28dd14b1-da92-4838-b229-ddc008311f48/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:44:57 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38707.
+23/11/29 02:44:57 INFO NettyBlockTransferService: Server created on 2c8d08b25e9b:38707
+23/11/29 02:44:57 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:44:57 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2c8d08b25e9b, 38707, None)
+23/11/29 02:44:57 INFO BlockManagerMasterEndpoint: Registering block manager 2c8d08b25e9b:38707 with 434.4 MiB RAM, BlockManagerId(driver, 2c8d08b25e9b, 38707, None)
+23/11/29 02:44:57 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2c8d08b25e9b, 38707, None)
+23/11/29 02:44:57 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2c8d08b25e9b, 38707, None)
+23/11/29 02:44:57 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:44:57 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:44:58 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:44:58 INFO InMemoryFileIndex: It took 43 ms to list leaf files for 1 paths.
+23/11/29 02:45:00 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:00 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:00 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:45:01 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:45:01 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:45:01 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2c8d08b25e9b:38707 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:45:01 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:45:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:01 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:45:01 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:45:01 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:45:01 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:01 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:01 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:45:01 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:45:01 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:45:01 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2c8d08b25e9b:38707 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:45:01 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:01 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:01 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:45:01 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (2c8d08b25e9b, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:45:01 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:45:01 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:45:02 INFO CodeGenerator: Code generated in 172.976201 ms
+23/11/29 02:45:02 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:45:02 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 458 ms on 2c8d08b25e9b (executor driver) (1/1)
+23/11/29 02:45:02 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:45:02 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.577 s
+23/11/29 02:45:02 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:02 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:45:02 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.624997 s
+23/11/29 02:45:02 INFO CodeGenerator: Code generated in 19.395614 ms
+23/11/29 02:45:02 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:45:02 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:02 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:02 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:45:02 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:45:02 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:45:02 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:45:02 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:02 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:02 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:02 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:45:02 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:45:02 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2c8d08b25e9b:38707 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:45:02 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:45:02 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:02 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:45:02 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:45:02 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:45:02 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:02 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:02 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:45:02 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:45:02 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.6 KiB, free 433.6 MiB)
+23/11/29 02:45:02 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2c8d08b25e9b:38707 (size: 78.6 KiB, free: 434.3 MiB)
+23/11/29 02:45:02 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:02 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:02 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:45:02 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (2c8d08b25e9b, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:45:02 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:45:02 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:02 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:02 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:02 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:45:03 INFO CodeGenerator: Code generated in 70.786426 ms
+23/11/29 02:45:03 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 2c8d08b25e9b:38707 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:45:03 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 2c8d08b25e9b:38707 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:45:03 INFO FileOutputCommitter: Saved output of task 'attempt_202311290245027391316096949330272_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290245027391316096949330272_0001_m_000000
+23/11/29 02:45:03 INFO SparkHadoopMapRedUtil: attempt_202311290245027391316096949330272_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:45:03 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:45:03 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 958 ms on 2c8d08b25e9b (executor driver) (1/1)
+23/11/29 02:45:03 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:45:03 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 1.016 s
+23/11/29 02:45:03 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:03 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:45:03 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 1.021879 s
+23/11/29 02:45:03 INFO FileFormatWriter: Start to commit write Job 455c253b-4260-4ffc-b4eb-7bcfe02b27c5.
+23/11/29 02:45:03 INFO FileFormatWriter: Write Job 455c253b-4260-4ffc-b4eb-7bcfe02b27c5 committed. Elapsed time: 13 ms.
+23/11/29 02:45:03 INFO FileFormatWriter: Finished processing stats for write job 455c253b-4260-4ffc-b4eb-7bcfe02b27c5.
+23/11/29 02:45:03 INFO SparkUI: Stopped Spark web UI at http://2c8d08b25e9b:4040
+23/11/29 02:45:03 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:45:03 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:45:03 INFO BlockManager: BlockManager stopped
+23/11/29 02:45:03 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:45:03 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:45:03 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:45:03 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:45:03 INFO ShutdownHookManager: Deleting directory /tmp/spark-12f37c14-5c20-43c2-9c86-17324c6183c9
+23/11/29 02:45:03 INFO ShutdownHookManager: Deleting directory /tmp/spark-54b692b8-dea8-4f41-9ee4-374faffb58a6
+Execution 8:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-ff76f458-c34f-4baf-816e-ce409bb4c1f7;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (503ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (357ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (321ms)
+:: resolution report :: resolve 7234ms :: artifacts dl 1202ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-ff76f458-c34f-4baf-816e-ce409bb4c1f7
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/12ms)
+23/11/29 02:45:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:45:16 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:45:16 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:16 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:45:16 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:16 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:45:16 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:45:16 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:45:16 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:45:16 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:45:16 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:45:16 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:45:16 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:45:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:45:16 INFO Utils: Successfully started service 'sparkDriver' on port 40275.
+23/11/29 02:45:17 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:45:17 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:45:17 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:45:17 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:45:17 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:45:17 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-385330d8-8a74-4798-aa7f-ec228c3739c2
+23/11/29 02:45:17 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:45:17 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:45:17 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:45:17 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://421d0e2a189c:40275/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://421d0e2a189c:40275/jars/org.tukaani_xz-1.9.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://421d0e2a189c:40275/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://421d0e2a189c:40275/jars/spark.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO Executor: Starting executor ID driver on host 421d0e2a189c
+23/11/29 02:45:17 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:45:17 INFO Executor: Fetching spark://421d0e2a189c:40275/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO TransportClientFactory: Successfully created connection to 421d0e2a189c/172.17.0.2:40275 after 33 ms (0 ms spent in bootstraps)
+23/11/29 02:45:17 INFO Utils: Fetching spark://421d0e2a189c:40275/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/fetchFileTemp17406776472322014337.tmp
+23/11/29 02:45:17 INFO Executor: Adding file:/tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:45:17 INFO Executor: Fetching spark://421d0e2a189c:40275/jars/org.tukaani_xz-1.9.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO Utils: Fetching spark://421d0e2a189c:40275/jars/org.tukaani_xz-1.9.jar to /tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/fetchFileTemp15385404918012097261.tmp
+23/11/29 02:45:17 INFO Executor: Adding file:/tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:45:17 INFO Executor: Fetching spark://421d0e2a189c:40275/jars/spark.jar with timestamp 1701225916518
+23/11/29 02:45:17 INFO Utils: Fetching spark://421d0e2a189c:40275/jars/spark.jar to /tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/fetchFileTemp7929920058690746124.tmp
+23/11/29 02:45:18 INFO Executor: Adding file:/tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/spark.jar to class loader
+23/11/29 02:45:18 INFO Executor: Fetching spark://421d0e2a189c:40275/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225916518
+23/11/29 02:45:18 INFO Utils: Fetching spark://421d0e2a189c:40275/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/fetchFileTemp10445905100152084293.tmp
+23/11/29 02:45:18 INFO Executor: Adding file:/tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d/userFiles-13a59acc-bc7a-4afa-8c88-72723386baaf/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:45:18 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46721.
+23/11/29 02:45:18 INFO NettyBlockTransferService: Server created on 421d0e2a189c:46721
+23/11/29 02:45:18 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:45:18 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 421d0e2a189c, 46721, None)
+23/11/29 02:45:18 INFO BlockManagerMasterEndpoint: Registering block manager 421d0e2a189c:46721 with 434.4 MiB RAM, BlockManagerId(driver, 421d0e2a189c, 46721, None)
+23/11/29 02:45:18 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 421d0e2a189c, 46721, None)
+23/11/29 02:45:18 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 421d0e2a189c, 46721, None)
+23/11/29 02:45:18 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:45:18 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:45:19 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:45:19 INFO InMemoryFileIndex: It took 47 ms to list leaf files for 1 paths.
+23/11/29 02:45:21 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:21 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:21 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:45:22 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:45:22 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 434.2 MiB)
+23/11/29 02:45:22 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 421d0e2a189c:46721 (size: 34.0 KiB, free: 434.4 MiB)
+23/11/29 02:45:22 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:45:22 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:22 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:45:22 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:45:22 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:45:22 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:22 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:22 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:45:22 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:45:22 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:45:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 421d0e2a189c:46721 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:45:22 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:22 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:22 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:45:22 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (421d0e2a189c, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:45:22 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:45:22 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:45:23 INFO CodeGenerator: Code generated in 158.894036 ms
+23/11/29 02:45:23 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:45:23 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 429 ms on 421d0e2a189c (executor driver) (1/1)
+23/11/29 02:45:23 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:45:23 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.534 s
+23/11/29 02:45:23 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:23 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:45:23 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.574143 s
+23/11/29 02:45:23 INFO CodeGenerator: Code generated in 18.341556 ms
+23/11/29 02:45:23 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:45:23 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:23 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:23 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:45:23 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:45:23 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:45:23 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:45:23 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:23 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:23 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:23 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:45:23 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:45:23 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 421d0e2a189c:46721 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:45:23 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:45:23 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:23 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:45:23 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:45:23 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:45:23 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:23 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:23 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:45:23 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:45:23 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.6 KiB, free 433.6 MiB)
+23/11/29 02:45:23 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 421d0e2a189c:46721 (size: 78.6 KiB, free: 434.3 MiB)
+23/11/29 02:45:23 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:23 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:23 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:45:23 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (421d0e2a189c, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:45:23 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:45:23 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:23 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:23 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:23 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:45:23 INFO CodeGenerator: Code generated in 79.236542 ms
+23/11/29 02:45:24 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 421d0e2a189c:46721 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:45:24 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 421d0e2a189c:46721 in memory (size: 34.0 KiB, free: 434.3 MiB)
+23/11/29 02:45:24 INFO FileOutputCommitter: Saved output of task 'attempt_202311290245233040311508026522899_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290245233040311508026522899_0001_m_000000
+23/11/29 02:45:24 INFO SparkHadoopMapRedUtil: attempt_202311290245233040311508026522899_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:45:24 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:45:24 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 893 ms on 421d0e2a189c (executor driver) (1/1)
+23/11/29 02:45:24 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:45:24 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.951 s
+23/11/29 02:45:24 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:24 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:45:24 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.955895 s
+23/11/29 02:45:24 INFO FileFormatWriter: Start to commit write Job f765fe52-8548-482c-b087-1684a6befce5.
+23/11/29 02:45:24 INFO FileFormatWriter: Write Job f765fe52-8548-482c-b087-1684a6befce5 committed. Elapsed time: 11 ms.
+23/11/29 02:45:24 INFO FileFormatWriter: Finished processing stats for write job f765fe52-8548-482c-b087-1684a6befce5.
+23/11/29 02:45:24 INFO SparkUI: Stopped Spark web UI at http://421d0e2a189c:4040
+23/11/29 02:45:24 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:45:24 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:45:24 INFO BlockManager: BlockManager stopped
+23/11/29 02:45:24 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:45:24 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:45:24 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:45:24 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:45:24 INFO ShutdownHookManager: Deleting directory /tmp/spark-9904ecee-7739-484b-b80c-48e31783df1d
+23/11/29 02:45:24 INFO ShutdownHookManager: Deleting directory /tmp/spark-39867bf6-8b00-4d1f-8033-d6e2901ab507
+Execution 9:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-4cef727e-6cc6-4095-b08e-123c235a3cdd;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (570ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (386ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (328ms)
+:: resolution report :: resolve 7311ms :: artifacts dl 1298ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-4cef727e-6cc6-4095-b08e-123c235a3cdd
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/9ms)
+23/11/29 02:45:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:45:37 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:45:37 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:37 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:45:37 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:37 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:45:37 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:45:37 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:45:37 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:45:37 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:45:37 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:45:37 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:45:37 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:45:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:45:37 INFO Utils: Successfully started service 'sparkDriver' on port 37605.
+23/11/29 02:45:37 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:45:37 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:45:37 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:45:37 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:45:37 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:45:37 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d7a74e6b-8cec-45c1-8f3a-c55e96594270
+23/11/29 02:45:37 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:45:37 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:45:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:45:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://2c18379ce653:37605/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://2c18379ce653:37605/jars/org.tukaani_xz-1.9.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://2c18379ce653:37605/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://2c18379ce653:37605/jars/spark.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO Executor: Starting executor ID driver on host 2c18379ce653
+23/11/29 02:45:38 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:45:38 INFO Executor: Fetching spark://2c18379ce653:37605/jars/org.tukaani_xz-1.9.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO TransportClientFactory: Successfully created connection to 2c18379ce653/172.17.0.2:37605 after 28 ms (0 ms spent in bootstraps)
+23/11/29 02:45:38 INFO Utils: Fetching spark://2c18379ce653:37605/jars/org.tukaani_xz-1.9.jar to /tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/fetchFileTemp6167162709557251693.tmp
+23/11/29 02:45:38 INFO Executor: Adding file:/tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:45:38 INFO Executor: Fetching spark://2c18379ce653:37605/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO Utils: Fetching spark://2c18379ce653:37605/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/fetchFileTemp16340610861423705805.tmp
+23/11/29 02:45:38 INFO Executor: Adding file:/tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:45:38 INFO Executor: Fetching spark://2c18379ce653:37605/jars/spark.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO Utils: Fetching spark://2c18379ce653:37605/jars/spark.jar to /tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/fetchFileTemp5309264212736996110.tmp
+23/11/29 02:45:38 INFO Executor: Adding file:/tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/spark.jar to class loader
+23/11/29 02:45:38 INFO Executor: Fetching spark://2c18379ce653:37605/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225937026
+23/11/29 02:45:38 INFO Utils: Fetching spark://2c18379ce653:37605/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/fetchFileTemp3941717698659688623.tmp
+23/11/29 02:45:38 INFO Executor: Adding file:/tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709/userFiles-9404ec02-5eb3-40dc-a88a-901f59c4b1c4/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:45:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39073.
+23/11/29 02:45:38 INFO NettyBlockTransferService: Server created on 2c18379ce653:39073
+23/11/29 02:45:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:45:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2c18379ce653, 39073, None)
+23/11/29 02:45:38 INFO BlockManagerMasterEndpoint: Registering block manager 2c18379ce653:39073 with 434.4 MiB RAM, BlockManagerId(driver, 2c18379ce653, 39073, None)
+23/11/29 02:45:38 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2c18379ce653, 39073, None)
+23/11/29 02:45:38 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2c18379ce653, 39073, None)
+23/11/29 02:45:39 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:45:39 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:45:40 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:45:40 INFO InMemoryFileIndex: It took 49 ms to list leaf files for 1 paths.
+23/11/29 02:45:42 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:42 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:42 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:45:43 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:45:43 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.0 KiB, free 434.2 MiB)
+23/11/29 02:45:43 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 2c18379ce653:39073 (size: 34.0 KiB, free: 434.4 MiB)
+23/11/29 02:45:43 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:45:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:43 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:45:43 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:45:43 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:45:43 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:43 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:43 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:45:43 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:45:43 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:45:43 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 2c18379ce653:39073 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:45:43 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:43 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:45:43 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (2c18379ce653, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:45:43 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:45:44 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:45:44 INFO CodeGenerator: Code generated in 155.453081 ms
+23/11/29 02:45:44 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2199 bytes result sent to driver
+23/11/29 02:45:44 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 481 ms on 2c18379ce653 (executor driver) (1/1)
+23/11/29 02:45:44 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:45:44 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.599 s
+23/11/29 02:45:44 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:44 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:45:44 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.645801 s
+23/11/29 02:45:44 INFO CodeGenerator: Code generated in 20.170188 ms
+23/11/29 02:45:44 INFO InMemoryFileIndex: It took 3 ms to list leaf files for 1 paths.
+23/11/29 02:45:44 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:45:44 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:45:44 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:45:44 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:45:44 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:45:44 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:45:44 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:44 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:44 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:44 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:45:44 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:45:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 2c18379ce653:39073 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:45:44 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:45:44 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:45:44 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:45:44 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:45:44 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:45:44 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:45:44 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:45:44 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:45:45 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:45:45 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.7 KiB, free 433.6 MiB)
+23/11/29 02:45:45 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 2c18379ce653:39073 (size: 78.7 KiB, free: 434.3 MiB)
+23/11/29 02:45:45 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:45:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:45:45 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:45:45 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (2c18379ce653, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:45:45 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:45:45 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:45:45 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:45:45 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:45:45 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:45:45 INFO CodeGenerator: Code generated in 56.78243 ms
+23/11/29 02:45:45 INFO FileOutputCommitter: Saved output of task 'attempt_202311290245443297657665277478355_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290245443297657665277478355_0001_m_000000
+23/11/29 02:45:45 INFO SparkHadoopMapRedUtil: attempt_202311290245443297657665277478355_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:45:45 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:45:45 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 799 ms on 2c18379ce653 (executor driver) (1/1)
+23/11/29 02:45:45 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:45:45 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.890 s
+23/11/29 02:45:45 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:45:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:45:45 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.901731 s
+23/11/29 02:45:45 INFO FileFormatWriter: Start to commit write Job d667fb7b-7309-4d3f-b062-69f30e3a612f.
+23/11/29 02:45:45 INFO FileFormatWriter: Write Job d667fb7b-7309-4d3f-b062-69f30e3a612f committed. Elapsed time: 11 ms.
+23/11/29 02:45:45 INFO FileFormatWriter: Finished processing stats for write job d667fb7b-7309-4d3f-b062-69f30e3a612f.
+23/11/29 02:45:45 INFO SparkUI: Stopped Spark web UI at http://2c18379ce653:4040
+23/11/29 02:45:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:45:45 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:45:45 INFO BlockManager: BlockManager stopped
+23/11/29 02:45:45 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:45:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:45:45 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:45:45 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:45:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-30f3a302-d1c4-4240-85bf-1f0121766709
+23/11/29 02:45:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-3153fc48-681d-4bf2-a3a8-84aa7d7d6a9e
+Execution 10:
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /tmp
+The jars for the packages stored in: /tmp/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-59459498-2feb-4a0b-9800-10a7669d99bf;1.0
+	confs: [default]
+	found org.apache.spark#spark-avro_2.12;3.3.2 in central
+	found org.tukaani#xz;1.9 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-avro_2.12/3.3.2/spark-avro_2.12-3.3.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-avro_2.12;3.3.2!spark-avro_2.12.jar (484ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.9!xz.jar (347ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (326ms)
+:: resolution report :: resolve 7434ms :: artifacts dl 1172ms
+	:: modules in use:
+	org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.tukaani#xz;1.9 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   3   |   3   |   3   |   0   ||   3   |   3   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-59459498-2feb-4a0b-9800-10a7669d99bf
+	confs: [default]
+	3 artifacts copied, 0 already retrieved (306kB/14ms)
+23/11/29 02:45:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/29 02:45:58 INFO SparkContext: Running Spark version 3.3.3
+23/11/29 02:45:58 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:58 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/29 02:45:58 INFO ResourceUtils: ==============================================================
+23/11/29 02:45:58 INFO SparkContext: Submitted application: AppSpark
+23/11/29 02:45:58 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/29 02:45:58 INFO ResourceProfile: Limiting resource is cpu
+23/11/29 02:45:58 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/29 02:45:58 INFO SecurityManager: Changing view acls to: spark
+23/11/29 02:45:58 INFO SecurityManager: Changing modify acls to: spark
+23/11/29 02:45:58 INFO SecurityManager: Changing view acls groups to: 
+23/11/29 02:45:58 INFO SecurityManager: Changing modify acls groups to: 
+23/11/29 02:45:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+23/11/29 02:45:58 INFO Utils: Successfully started service 'sparkDriver' on port 40327.
+23/11/29 02:45:58 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 02:45:58 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 02:45:58 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/29 02:45:58 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/29 02:45:58 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 02:45:58 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e9ff8a83-81e6-48a9-8514-b5802d22dfad
+23/11/29 02:45:58 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/29 02:45:58 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 02:45:59 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/29 02:45:59 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar at spark://c0676f4d09df:40327/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO SparkContext: Added JAR file:///tmp/jars/org.tukaani_xz-1.9.jar at spark://c0676f4d09df:40327/jars/org.tukaani_xz-1.9.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO SparkContext: Added JAR file:///tmp/jars/org.spark-project.spark_unused-1.0.0.jar at spark://c0676f4d09df:40327/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO SparkContext: Added JAR file:/resources/spark.jar at spark://c0676f4d09df:40327/jars/spark.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO Executor: Starting executor ID driver on host c0676f4d09df
+23/11/29 02:45:59 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/11/29 02:45:59 INFO Executor: Fetching spark://c0676f4d09df:40327/jars/spark.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO TransportClientFactory: Successfully created connection to c0676f4d09df/172.17.0.2:40327 after 28 ms (0 ms spent in bootstraps)
+23/11/29 02:45:59 INFO Utils: Fetching spark://c0676f4d09df:40327/jars/spark.jar to /tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/fetchFileTemp8468463857804032152.tmp
+23/11/29 02:45:59 INFO Executor: Adding file:/tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/spark.jar to class loader
+23/11/29 02:45:59 INFO Executor: Fetching spark://c0676f4d09df:40327/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO Utils: Fetching spark://c0676f4d09df:40327/jars/org.apache.spark_spark-avro_2.12-3.3.2.jar to /tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/fetchFileTemp45847069649690455.tmp
+23/11/29 02:45:59 INFO Executor: Adding file:/tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/org.apache.spark_spark-avro_2.12-3.3.2.jar to class loader
+23/11/29 02:45:59 INFO Executor: Fetching spark://c0676f4d09df:40327/jars/org.tukaani_xz-1.9.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO Utils: Fetching spark://c0676f4d09df:40327/jars/org.tukaani_xz-1.9.jar to /tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/fetchFileTemp3484769909570570585.tmp
+23/11/29 02:45:59 INFO Executor: Adding file:/tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/org.tukaani_xz-1.9.jar to class loader
+23/11/29 02:45:59 INFO Executor: Fetching spark://c0676f4d09df:40327/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1701225958171
+23/11/29 02:45:59 INFO Utils: Fetching spark://c0676f4d09df:40327/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/fetchFileTemp4981006132174044537.tmp
+23/11/29 02:45:59 INFO Executor: Adding file:/tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20/userFiles-a26a0aa2-e686-4494-afc6-5a54798e8a3c/org.spark-project.spark_unused-1.0.0.jar to class loader
+23/11/29 02:45:59 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39901.
+23/11/29 02:45:59 INFO NettyBlockTransferService: Server created on c0676f4d09df:39901
+23/11/29 02:45:59 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/29 02:45:59 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, c0676f4d09df, 39901, None)
+23/11/29 02:45:59 INFO BlockManagerMasterEndpoint: Registering block manager c0676f4d09df:39901 with 434.4 MiB RAM, BlockManagerId(driver, c0676f4d09df, 39901, None)
+23/11/29 02:45:59 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, c0676f4d09df, 39901, None)
+23/11/29 02:45:59 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, c0676f4d09df, 39901, None)
+23/11/29 02:46:00 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/29 02:46:00 INFO SharedState: Warehouse path is 'file:/opt/spark/work-dir/spark-warehouse'.
+23/11/29 02:46:01 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+23/11/29 02:46:01 INFO InMemoryFileIndex: It took 41 ms to list leaf files for 1 paths.
+23/11/29 02:46:03 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:46:03 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:46:03 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+23/11/29 02:46:04 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.0 KiB, free 434.2 MiB)
+23/11/29 02:46:04 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 434.2 MiB)
+23/11/29 02:46:04 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on c0676f4d09df:39901 (size: 33.9 KiB, free: 434.4 MiB)
+23/11/29 02:46:04 INFO SparkContext: Created broadcast 0 from collectAsList at AppSpark.java:27
+23/11/29 02:46:04 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:46:04 INFO SparkContext: Starting job: collectAsList at AppSpark.java:27
+23/11/29 02:46:04 INFO DAGScheduler: Got job 0 (collectAsList at AppSpark.java:27) with 1 output partitions
+23/11/29 02:46:04 INFO DAGScheduler: Final stage: ResultStage 0 (collectAsList at AppSpark.java:27)
+23/11/29 02:46:04 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:46:04 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:46:04 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27), which has no missing parents
+23/11/29 02:46:04 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.5 KiB, free 434.2 MiB)
+23/11/29 02:46:04 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.2 MiB)
+23/11/29 02:46:04 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on c0676f4d09df:39901 (size: 4.5 KiB, free: 434.4 MiB)
+23/11/29 02:46:04 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:46:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collectAsList at AppSpark.java:27) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:46:04 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+23/11/29 02:46:04 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (c0676f4d09df, executor driver, partition 0, PROCESS_LOCAL, 4900 bytes) taskResourceAssignments Map()
+23/11/29 02:46:04 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/29 02:46:04 INFO FileScanRDD: Reading File path: file:///resources/schema.avsc, range: 0-2303, partition values: [empty row]
+23/11/29 02:46:04 INFO CodeGenerator: Code generated in 141.382729 ms
+23/11/29 02:46:05 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2156 bytes result sent to driver
+23/11/29 02:46:05 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 424 ms on c0676f4d09df (executor driver) (1/1)
+23/11/29 02:46:05 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/29 02:46:05 INFO DAGScheduler: ResultStage 0 (collectAsList at AppSpark.java:27) finished in 0.536 s
+23/11/29 02:46:05 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:46:05 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+23/11/29 02:46:05 INFO DAGScheduler: Job 0 finished: collectAsList at AppSpark.java:27, took 0.584161 s
+23/11/29 02:46:05 INFO CodeGenerator: Code generated in 18.755623 ms
+23/11/29 02:46:05 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+23/11/29 02:46:05 INFO FileSourceStrategy: Pushed Filters: 
+23/11/29 02:46:05 INFO FileSourceStrategy: Post-Scan Filters: 
+23/11/29 02:46:05 INFO FileSourceStrategy: Output Data Schema: struct<ID: string, Source: string, Severity: int, Start_Time: string, End_Time: string ... 44 more fields>
+23/11/29 02:46:05 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 02:46:05 INFO deprecation: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+23/11/29 02:46:05 INFO AvroUtils: Compressing Avro output using the snappy codec
+23/11/29 02:46:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:46:05 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:46:05 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:46:05 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 199.0 KiB, free 434.0 MiB)
+23/11/29 02:46:05 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.9 KiB, free 433.9 MiB)
+23/11/29 02:46:05 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on c0676f4d09df:39901 (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:46:05 INFO SparkContext: Created broadcast 2 from save at AppSpark.java:39
+23/11/29 02:46:05 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+23/11/29 02:46:05 INFO SparkContext: Starting job: save at AppSpark.java:39
+23/11/29 02:46:05 INFO DAGScheduler: Got job 1 (save at AppSpark.java:39) with 1 output partitions
+23/11/29 02:46:05 INFO DAGScheduler: Final stage: ResultStage 1 (save at AppSpark.java:39)
+23/11/29 02:46:05 INFO DAGScheduler: Parents of final stage: List()
+23/11/29 02:46:05 INFO DAGScheduler: Missing parents: List()
+23/11/29 02:46:05 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39), which has no missing parents
+23/11/29 02:46:05 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 221.6 KiB, free 433.7 MiB)
+23/11/29 02:46:05 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 78.6 KiB, free 433.6 MiB)
+23/11/29 02:46:05 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on c0676f4d09df:39901 (size: 78.6 KiB, free: 434.3 MiB)
+23/11/29 02:46:05 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1509
+23/11/29 02:46:05 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at save at AppSpark.java:39) (first 15 tasks are for partitions Vector(0))
+23/11/29 02:46:05 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+23/11/29 02:46:05 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (c0676f4d09df, executor driver, partition 0, PROCESS_LOCAL, 4905 bytes) taskResourceAssignments Map()
+23/11/29 02:46:05 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+23/11/29 02:46:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+23/11/29 02:46:05 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/11/29 02:46:05 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/11/29 02:46:05 INFO BlockManagerInfo: Removed broadcast_0_piece0 on c0676f4d09df:39901 in memory (size: 33.9 KiB, free: 434.3 MiB)
+23/11/29 02:46:05 INFO BlockManagerInfo: Removed broadcast_1_piece0 on c0676f4d09df:39901 in memory (size: 4.5 KiB, free: 434.3 MiB)
+23/11/29 02:46:05 INFO FileScanRDD: Reading File path: file:///resources/us_accidents.csv, range: 0-2598438, partition values: [empty row]
+23/11/29 02:46:05 INFO CodeGenerator: Code generated in 62.430758 ms
+23/11/29 02:46:06 INFO FileOutputCommitter: Saved output of task 'attempt_202311290246054712573786433648523_0001_m_000000_1' to file:/opt/spark/work-dir/output/_temporary/0/task_202311290246054712573786433648523_0001_m_000000
+23/11/29 02:46:06 INFO SparkHadoopMapRedUtil: attempt_202311290246054712573786433648523_0001_m_000000_1: Committed. Elapsed time: 0 ms.
+23/11/29 02:46:06 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2541 bytes result sent to driver
+23/11/29 02:46:06 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 887 ms on c0676f4d09df (executor driver) (1/1)
+23/11/29 02:46:06 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/29 02:46:06 INFO DAGScheduler: ResultStage 1 (save at AppSpark.java:39) finished in 0.938 s
+23/11/29 02:46:06 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/29 02:46:06 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+23/11/29 02:46:06 INFO DAGScheduler: Job 1 finished: save at AppSpark.java:39, took 0.942540 s
+23/11/29 02:46:06 INFO FileFormatWriter: Start to commit write Job a4fb7eaf-272d-4912-af20-bf95900be2b3.
+23/11/29 02:46:06 INFO FileFormatWriter: Write Job a4fb7eaf-272d-4912-af20-bf95900be2b3 committed. Elapsed time: 13 ms.
+23/11/29 02:46:06 INFO FileFormatWriter: Finished processing stats for write job a4fb7eaf-272d-4912-af20-bf95900be2b3.
+23/11/29 02:46:06 INFO SparkUI: Stopped Spark web UI at http://c0676f4d09df:4040
+23/11/29 02:46:06 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/29 02:46:06 INFO MemoryStore: MemoryStore cleared
+23/11/29 02:46:06 INFO BlockManager: BlockManager stopped
+23/11/29 02:46:06 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/29 02:46:06 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/29 02:46:06 INFO SparkContext: Successfully stopped SparkContext
+Time in sec: 5
+23/11/29 02:46:06 INFO ShutdownHookManager: Shutdown hook called
+23/11/29 02:46:06 INFO ShutdownHookManager: Deleting directory /tmp/spark-98e6a27f-2269-4b59-a0f0-66194b8d5b38
+23/11/29 02:46:06 INFO ShutdownHookManager: Deleting directory /tmp/spark-f92cfcbc-672a-4fbd-8d08-47ab2b926b20
