@@ -1,0 +1,220 @@
+Execution 1:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 203
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:30 min
+[INFO] Finished at: 2023-11-29T02:07:29-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 2:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 216
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:43 min
+[INFO] Finished at: 2023-11-29T02:11:14-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 3:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 207
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:34 min
+[INFO] Finished at: 2023-11-29T02:14:50-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 4:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 211
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:39 min
+[INFO] Finished at: 2023-11-29T02:18:31-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 5:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 201
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:29 min
+[INFO] Finished at: 2023-11-29T02:22:02-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 6:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 244
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:10 min
+[INFO] Finished at: 2023-11-29T02:26:15-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 7:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 209
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:36 min
+[INFO] Finished at: 2023-11-29T02:29:53-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 8:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 212
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:39 min
+[INFO] Finished at: 2023-11-29T02:33:34-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 9:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 208
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:36 min
+[INFO] Finished at: 2023-11-29T02:37:11-03:00
+[INFO] ------------------------------------------------------------------------
+Execution 10:
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< org.thesis:apache-beam >-----------------------
+[INFO] Building apache-beam 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apache-beam ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ apache-beam ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ apache-beam ---
+Time in sec: 206
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:33 min
+[INFO] Finished at: 2023-11-29T02:40:46-03:00
+[INFO] ------------------------------------------------------------------------
