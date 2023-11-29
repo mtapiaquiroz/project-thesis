@@ -23,11 +23,14 @@ public class AppBeam {
                 .withSuffix(".avro").withCodec(CodecFactory.snappyCodec()));
     }
 
-
     public static void main(String[] args) throws IOException {
         var options = PipelineOptionsFactory.fromArgs(args).withValidation().as(BeamOptions.class);
         var pipeline = Pipeline.create(options);
+        long startTime = System.currentTimeMillis();
         AppBeam.buildPipeline(pipeline, options);
         pipeline.run().waitUntilFinish();
+        long endTime = System.currentTimeMillis();
+        long executionTime = endTime - startTime;
+        System.out.println("Time in sec: " + (executionTime/1000));
     }
 }

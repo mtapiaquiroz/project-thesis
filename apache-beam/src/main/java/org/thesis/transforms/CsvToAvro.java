@@ -88,7 +88,7 @@ public class CsvToAvro {
                             throw new IllegalArgumentException("Field type " + fieldType + " is not supported.");
                     }
                 } catch (NumberFormatException e) {
-                    throw new NumberFormatException("This type cannot be parsed");
+                    throw new NumberFormatException("This type cannot be parsed. Field type " + fieldType + " is not supported. Exception: " + e);
                 }
             }
 

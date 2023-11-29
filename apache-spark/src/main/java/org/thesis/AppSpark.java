@@ -6,12 +6,9 @@ import org.apache.spark.sql.*;
 import org.apache.spark.sql.types.StructType;
 import org.thesis.utils.AvroSchemaConverter;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 public class AppSpark {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length != 3) {
             System.err.println("Usage: AppSpark <inputCsvPath> <avroSchemaPath> <outputAvroPath>");
             System.exit(1);
@@ -21,12 +18,13 @@ public class AppSpark {
         JavaSparkContext sc = new JavaSparkContext(sparkConf);
         SQLContext sqlContext = new SQLContext(sc);
         SparkSession spark = SparkSession.builder().appName("AppSpark").config(sparkConf).getOrCreate();
+        long startTime = System.currentTimeMillis();
 
         String inputCsvPath = args[0];
         String avroSchemaPath = args[1];
         String outputAvroPath = args[2];
 
-        String avroSchemaString = new String(Files.readAllBytes(Paths.get(avroSchemaPath)));
+        String avroSchemaString = spark.read().textFile(avroSchemaPath).collectAsList().get(0);
         StructType structType = AvroSchemaConverter.avroSchemaToStructType(avroSchemaString);
 
         Dataset<Row> csvData = sqlContext.read().
@@ -41,5 +39,9 @@ public class AppSpark {
                 .save(outputAvroPath);
 
         spark.stop();
+        long endTime = System.currentTimeMillis();
+        long executionTime = endTime - startTime;
+        System.out.println("Time in sec: " + (executionTime / 1000));
+
     }
 }
