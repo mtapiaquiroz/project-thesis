@@ -1,0 +1,1309 @@
+Execution 1:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/68cda3d71f4f40b6ba7b7a81c2183881/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/68cda3d71f4f40b6ba7b7a81c2183881/driveroutput
+jobUuid: f0fdb5e8-57ec-3af6-bd82-87231ed5dc1a
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 68cda3d71f4f40b6ba7b7a81c2183881
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:07:52.782856Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:06:11.202507Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:06:11.242434Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:06:11.513781Z'
+Execution 2:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/96eea5b460634af28dd02e1d426154ae/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/96eea5b460634af28dd02e1d426154ae/driveroutput
+jobUuid: 91ebe95b-55f3-3add-810d-fe25f8bfa6db
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 96eea5b460634af28dd02e1d426154ae
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:09:43.333256Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:08:05.335605Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:08:05.372704Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:08:05.650990Z'
+Execution 3:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/46f73fb945a14c34bf25eeba05be7c22/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/46f73fb945a14c34bf25eeba05be7c22/driveroutput
+jobUuid: b16e0f95-37b3-338e-a6d5-24b906bdb690
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 46f73fb945a14c34bf25eeba05be7c22
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:11:30.691290Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:09:53.602682Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:09:53.631365Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:09:53.846565Z'
+Execution 4:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/708bc29cb5d841b8854566844d2adc4b/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/708bc29cb5d841b8854566844d2adc4b/driveroutput
+jobUuid: 235f2b93-e5d0-34f3-823c-09d156682e9a
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 708bc29cb5d841b8854566844d2adc4b
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:13:21.492072Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:11:43.317750Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:11:43.344995Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:11:43.561203Z'
+Execution 5:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/8a5ef32229fd4756b5d5db016854db0a/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/8a5ef32229fd4756b5d5db016854db0a/driveroutput
+jobUuid: 14d16334-0937-3d51-8767-7a1b89897adf
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 8a5ef32229fd4756b5d5db016854db0a
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:15:08.267533Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:13:31.710030Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:13:31.764706Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:13:32.017713Z'
+Execution 6:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/3205aa0304b8402c9b333aa4e01f0b5d/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/3205aa0304b8402c9b333aa4e01f0b5d/driveroutput
+jobUuid: 938b9542-e150-3783-9421-cf5f60d0d2bd
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 3205aa0304b8402c9b333aa4e01f0b5d
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:16:56.730912Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:15:20.126523Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:15:20.166563Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:15:20.412493Z'
+Execution 7:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/28d667101f444c5dbe1d6f91059509fe/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/28d667101f444c5dbe1d6f91059509fe/driveroutput
+jobUuid: ca618803-8196-32d7-8fa7-7bd7c7ba5a6d
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 28d667101f444c5dbe1d6f91059509fe
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:18:46.875413Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:17:08.604982Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:17:08.641350Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:17:08.891573Z'
+Execution 8:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/020f6a57a2cb401da39cf2e58d7014d3/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/020f6a57a2cb401da39cf2e58d7014d3/driveroutput
+jobUuid: c7a8953f-0b61-39b7-94ca-89502d5e7724
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 020f6a57a2cb401da39cf2e58d7014d3
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:20:34.211928Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:18:58.851596Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:18:58.891367Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:18:59.129924Z'
+Execution 9:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/911ea8a4f70b4661ba337261034cc3c7/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/911ea8a4f70b4661ba337261034cc3c7/driveroutput
+jobUuid: ccd68fca-87fe-38f6-87b4-d2f8699546ca
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 911ea8a4f70b4661ba337261034cc3c7
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:22:19.422407Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:20:42.728011Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:20:42.761193Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:20:42.993619Z'
+Execution 10:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/935362b44923405d9614642a2e578709/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/935362b44923405d9614642a2e578709/driveroutput
+jobUuid: 6b83fa9e-c439-3053-af39-f1746dcdc809
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 935362b44923405d9614642a2e578709
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/70k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T04:24:06.752635Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T04:22:29.771402Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T04:22:29.811143Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T04:22:30.068285Z'
+Job [68cda3d71f4f40b6ba7b7a81c2183881] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-4371cd32-88b0-48f0-b13a-072cf3adafea;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 275ms :: artifacts dl 8ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-4371cd32-88b0-48f0-b13a-072cf3adafea
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:06:16 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:06:16 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:06:16 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:06:16 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:06:18 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=271; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:06:18 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:06:18 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=154; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:06:24 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:06:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=285; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:06:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=205; previousMaxLatencyMs=92; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000000_1/part-00000-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:26 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=206; previousMaxLatencyMs=205; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000001_2/part-00001-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:26 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=219; previousMaxLatencyMs=206; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000003_4/part-00003-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:42 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=151; previousMaxLatencyMs=136; operationCount=6148; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:06:42 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=443; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000003_4/part-00003-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:42 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=498; previousMaxLatencyMs=443; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000000_1/part-00000-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:43 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1049; previousMaxLatencyMs=498; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000002_3/part-00002-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000003_4/' directory.
+23/11/29 04:06:43 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=431; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000003_4/part-00003-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00003-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro)
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000001_2/' directory.
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000000_1/' directory.
+23/11/29 04:06:43 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=517; previousMaxLatencyMs=431; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000000_1/part-00000-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro)
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:06:43 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=293; previousMaxLatencyMs=285; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000003_4
+23/11/29 04:06:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:43 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:06:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:43 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:06:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000002_3/' directory.
+23/11/29 04:06:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:58 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000005_6/' directory.
+23/11/29 04:06:58 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000006_7/' directory.
+23/11/29 04:06:58 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000004_5/' directory.
+23/11/29 04:06:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:06:58 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1274; previousMaxLatencyMs=1049; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000007_8/part-00007-3a62711e-40ac-4947-a085-61fd2bc740b8-c000.avro
+23/11/29 04:06:59 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000007_8/' directory.
+23/11/29 04:06:59 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:12 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000010_11/' directory.
+23/11/29 04:07:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:12 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000011_12/' directory.
+23/11/29 04:07:12 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000008_9/' directory.
+23/11/29 04:07:12 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000009_10/' directory.
+23/11/29 04:07:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000013_14/' directory.
+23/11/29 04:07:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000012_13/' directory.
+23/11/29 04:07:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:26 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000014_15/' directory.
+23/11/29 04:07:26 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000015_16/' directory.
+23/11/29 04:07:26 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000016_17/' directory.
+23/11/29 04:07:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000017_18/' directory.
+23/11/29 04:07:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000018_19/' directory.
+23/11/29 04:07:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:07:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000019_20/' directory.
+23/11/29 04:07:49 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000022_23/' directory.
+23/11/29 04:07:50 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000020_21/' directory.
+23/11/29 04:07:51 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290406255722329430612362140_0001_m_000021_22/' directory.
+23/11/29 04:07:51 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+23/11/29 04:07:51 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=415; previousMaxLatencyMs=293; operationCount=25; context=gs://project-thesis-max/output/apache-spark/70k/_temporary
+Time in sec: 92
+Job [68cda3d71f4f40b6ba7b7a81c2183881] finished successfully.
+Job [96eea5b460634af28dd02e1d426154ae] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-3e72e06b-8993-42ca-bee2-d65c6f77cc99;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 254ms :: artifacts dl 7ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-3e72e06b-8993-42ca-bee2-d65c6f77cc99
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/6ms)
+23/11/29 04:08:12 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:08:12 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:08:12 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:08:12 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:08:13 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=264; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:08:13 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:08:20 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:08:20 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=337; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:08:20 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:21 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=219; previousMaxLatencyMs=106; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000001_2/part-00001-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:08:21 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=237; previousMaxLatencyMs=219; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000002_3/part-00002-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:08:21 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=233; previousMaxLatencyMs=219; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000003_4/part-00003-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:08:38 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=451; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000000_1/part-00000-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:08:38 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=462; previousMaxLatencyMs=451; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000002_3/part-00002-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:08:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000000_1/' directory.
+23/11/29 04:08:38 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=453; previousMaxLatencyMs=0; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000000_1/part-00000-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro)
+23/11/29 04:08:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000001_2/' directory.
+23/11/29 04:08:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000002_3/' directory.
+23/11/29 04:08:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000003_4/' directory.
+23/11/29 04:08:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:08:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:39 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:08:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:08:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:39 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:08:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:08:39 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=350; previousMaxLatencyMs=337; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000002_3
+23/11/29 04:08:39 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:08:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:08:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:39 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:52 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000005_6/' directory.
+23/11/29 04:08:52 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000004_5/' directory.
+23/11/29 04:08:52 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:52 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000007_8/' directory.
+23/11/29 04:08:52 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:53 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:08:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000006_7/' directory.
+23/11/29 04:08:53 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:04 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=158; previousMaxLatencyMs=148; operationCount=16393; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:09:05 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=160; previousMaxLatencyMs=158; operationCount=18442; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:09:05 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000008_9/' directory.
+23/11/29 04:09:05 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=642; previousMaxLatencyMs=462; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000010_11/part-00010-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:09:05 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:06 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=757; previousMaxLatencyMs=642; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000011_12/part-00011-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:09:06 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=780; previousMaxLatencyMs=757; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000009_10/part-00009-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:09:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000010_11/' directory.
+23/11/29 04:09:06 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000011_12/' directory.
+23/11/29 04:09:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000009_10/' directory.
+23/11/29 04:09:07 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:07 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:18 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1065; previousMaxLatencyMs=780; operationCount=15; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000012_13/part-00012-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro
+23/11/29 04:09:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000012_13/' directory.
+23/11/29 04:09:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000013_14/' directory.
+23/11/29 04:09:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000014_15/' directory.
+23/11/29 04:09:19 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=497; previousMaxLatencyMs=453; operationCount=15; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000014_15/part-00014-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00014-03e3746a-e2b0-4286-81ee-b88aa3e98e4d-c000.avro)
+23/11/29 04:09:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000015_16/' directory.
+23/11/29 04:09:20 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000016_17/' directory.
+23/11/29 04:09:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000018_19/' directory.
+23/11/29 04:09:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000017_18/' directory.
+23/11/29 04:09:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000019_20/' directory.
+23/11/29 04:09:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:09:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000022_23/' directory.
+23/11/29 04:09:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000020_21/' directory.
+23/11/29 04:09:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290408201479670346315153100_0001_m_000021_22/' directory.
+23/11/29 04:09:42 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 87
+Job [96eea5b460634af28dd02e1d426154ae] finished successfully.
+Job [46f73fb945a14c34bf25eeba05be7c22] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-35adf9e7-8b0c-42fc-ad31-7ab511da2f18;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 321ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-35adf9e7-8b0c-42fc-ad31-7ab511da2f18
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/8ms)
+23/11/29 04:10:00 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:10:00 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:10:00 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:10:00 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:10:01 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=259; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:10:01 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:10:01 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=170; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:10:08 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:10:08 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=366; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:10:08 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:09 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=156; previousMaxLatencyMs=77; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000000_1/part-00000-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:09 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=177; previousMaxLatencyMs=156; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000003_4/part-00003-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:09 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=200; previousMaxLatencyMs=177; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000001_2/part-00001-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:09 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=225; previousMaxLatencyMs=200; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000002_3/part-00002-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:24 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=461; previousMaxLatencyMs=0; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000000_1/part-00000-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:24 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=639; previousMaxLatencyMs=461; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000001_2/part-00001-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000000_1/' directory.
+23/11/29 04:10:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=429; previousMaxLatencyMs=0; operationCount=2; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000000_1/part-00000-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro)
+23/11/29 04:10:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000001_2/' directory.
+23/11/29 04:10:25 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=670; previousMaxLatencyMs=639; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000003_4/part-00003-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:10:25 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:10:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:10:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:25 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000003_4/' directory.
+23/11/29 04:10:26 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1432; previousMaxLatencyMs=670; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000002_3/part-00002-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro
+23/11/29 04:10:26 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000002_3/' directory.
+23/11/29 04:10:27 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000006_7/' directory.
+23/11/29 04:10:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000004_5/' directory.
+23/11/29 04:10:39 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000005_6/' directory.
+23/11/29 04:10:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000007_8/' directory.
+23/11/29 04:10:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:52 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=198; previousMaxLatencyMs=122; operationCount=22540; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:10:52 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000011_12/' directory.
+23/11/29 04:10:52 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000008_9/' directory.
+23/11/29 04:10:53 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000010_11/' directory.
+23/11/29 04:10:53 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=445; previousMaxLatencyMs=429; operationCount=12; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000010_11/part-00010-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00010-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro)
+23/11/29 04:10:53 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:10:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000009_10/' directory.
+23/11/29 04:10:53 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=501; previousMaxLatencyMs=445; operationCount=12; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000009_10/part-00009-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00009-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro)
+23/11/29 04:10:53 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:05 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000012_13/' directory.
+23/11/29 04:11:05 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000013_14/' directory.
+23/11/29 04:11:05 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:06 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000015_16/' directory.
+23/11/29 04:11:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000014_15/' directory.
+23/11/29 04:11:06 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:06 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000016_17/' directory.
+23/11/29 04:11:18 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000017_18/' directory.
+23/11/29 04:11:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000018_19/' directory.
+23/11/29 04:11:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000019_20/' directory.
+23/11/29 04:11:19 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=513; previousMaxLatencyMs=501; operationCount=20; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000019_20/part-00019-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00019-fb79a3f5-fdf1-4e42-8882-2367af0b472b-c000.avro)
+23/11/29 04:11:27 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000022_23/' directory.
+23/11/29 04:11:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000020_21/' directory.
+23/11/29 04:11:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290410083335432344473159216_0001_m_000021_22/' directory.
+23/11/29 04:11:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 86
+Job [46f73fb945a14c34bf25eeba05be7c22] finished successfully.
+Job [708bc29cb5d841b8854566844d2adc4b] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-c441dfd2-50ad-4d89-96aa-374f8802f001;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 281ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-c441dfd2-50ad-4d89-96aa-374f8802f001
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:11:49 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:11:49 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:11:49 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:11:49 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:11:51 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=275; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:11:51 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:11:57 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:11:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=429; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:11:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:58 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:11:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=192; previousMaxLatencyMs=100; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000003_4/part-00003-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:11:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=200; previousMaxLatencyMs=192; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000002_3/part-00002-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:11:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=231; previousMaxLatencyMs=200; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000001_2/part-00001-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:12:14 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=522; previousMaxLatencyMs=0; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000002_3/part-00002-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:12:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000002_3/' directory.
+23/11/29 04:12:15 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=484; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000002_3/part-00002-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00002-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro)
+23/11/29 04:12:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000001_2/' directory.
+23/11/29 04:12:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000000_1/' directory.
+23/11/29 04:12:15 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=729; previousMaxLatencyMs=522; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000003_4/part-00003-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:12:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:12:16 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:16 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:12:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:12:16 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:16 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:12:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:12:16 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000003_4/' directory.
+23/11/29 04:12:16 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000006_7/' directory.
+23/11/29 04:12:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000005_6/' directory.
+23/11/29 04:12:30 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=897; previousMaxLatencyMs=729; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000007_8/part-00007-e36aa57f-2be4-4be5-8aef-df63456c03bd-c000.avro
+23/11/29 04:12:30 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:30 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000004_5/' directory.
+23/11/29 04:12:30 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000007_8/' directory.
+23/11/29 04:12:30 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:42 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=191; previousMaxLatencyMs=93; operationCount=22540; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:12:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000009_10/' directory.
+23/11/29 04:12:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000010_11/' directory.
+23/11/29 04:12:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000008_9/' directory.
+23/11/29 04:12:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000011_12/' directory.
+23/11/29 04:12:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000012_13/' directory.
+23/11/29 04:12:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000015_16/' directory.
+23/11/29 04:12:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000013_14/' directory.
+23/11/29 04:12:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000014_15/' directory.
+23/11/29 04:12:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:12:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000017_18/' directory.
+23/11/29 04:13:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000016_17/' directory.
+23/11/29 04:13:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000018_19/' directory.
+23/11/29 04:13:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000019_20/' directory.
+23/11/29 04:13:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000022_23/' directory.
+23/11/29 04:13:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000020_21/' directory.
+23/11/29 04:13:19 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290411578821753412440098778_0001_m_000021_22/' directory.
+23/11/29 04:13:20 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 88
+Job [708bc29cb5d841b8854566844d2adc4b] finished successfully.
+Job [8a5ef32229fd4756b5d5db016854db0a] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-08d65f0a-5a97-49c3-b18d-d3966394b374;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 263ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-08d65f0a-5a97-49c3-b18d-d3966394b374
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:13:38 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:13:38 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:13:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:13:38 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:13:40 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=291; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:13:40 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:13:46 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:13:46 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=377; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:13:46 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:13:47 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=192; previousMaxLatencyMs=112; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000002_3/part-00002-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro
+23/11/29 04:14:02 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=152; previousMaxLatencyMs=30; operationCount=1; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:14:02 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=209; previousMaxLatencyMs=152; operationCount=6148; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:14:02 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=402; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000003_4/part-00003-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro
+23/11/29 04:14:03 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=524; previousMaxLatencyMs=402; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000002_3/part-00002-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro
+23/11/29 04:14:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000003_4/' directory.
+23/11/29 04:14:03 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=445; previousMaxLatencyMs=0; operationCount=2; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000003_4/part-00003-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00003-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro)
+23/11/29 04:14:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000000_1/' directory.
+23/11/29 04:14:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:14:03 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000001_2/' directory.
+23/11/29 04:14:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000002_3/' directory.
+23/11/29 04:14:03 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=455; previousMaxLatencyMs=445; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000002_3/part-00002-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00002-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro)
+23/11/29 04:14:03 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:03 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:04 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000007_8/' directory.
+23/11/29 04:14:17 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=592; previousMaxLatencyMs=524; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000006_7/part-00006-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro
+23/11/29 04:14:17 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000004_5/' directory.
+23/11/29 04:14:17 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1059; previousMaxLatencyMs=592; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000005_6/part-00005-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro
+23/11/29 04:14:17 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000006_7/' directory.
+23/11/29 04:14:17 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000005_6/' directory.
+23/11/29 04:14:18 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=490; previousMaxLatencyMs=455; operationCount=8; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000005_6/part-00005-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00005-ad0b92c1-61a7-4a29-a9df-4f6e16e0542d-c000.avro)
+23/11/29 04:14:18 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000008_9/' directory.
+23/11/29 04:14:30 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000011_12/' directory.
+23/11/29 04:14:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000010_11/' directory.
+23/11/29 04:14:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000009_10/' directory.
+23/11/29 04:14:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000012_13/' directory.
+23/11/29 04:14:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000013_14/' directory.
+23/11/29 04:14:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000015_16/' directory.
+23/11/29 04:14:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000014_15/' directory.
+23/11/29 04:14:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000016_17/' directory.
+23/11/29 04:14:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000017_18/' directory.
+23/11/29 04:14:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000019_20/' directory.
+23/11/29 04:14:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:14:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000018_19/' directory.
+23/11/29 04:15:04 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000022_23/' directory.
+23/11/29 04:15:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000020_21/' directory.
+23/11/29 04:15:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290413477615655865912491845_0001_m_000021_22/' directory.
+23/11/29 04:15:07 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 86
+Job [8a5ef32229fd4756b5d5db016854db0a] finished successfully.
+Job [3205aa0304b8402c9b333aa4e01f0b5d] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-bc9e36cf-3755-4f61-8688-484354c1ad51;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 258ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-bc9e36cf-3755-4f61-8688-484354c1ad51
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:15:25 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:15:25 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:15:25 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:15:25 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:15:27 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=220; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:15:27 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:15:27 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=154; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:15:33 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:15:34 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=384; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:15:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:35 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=227; previousMaxLatencyMs=111; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000002_3/part-00002-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:15:35 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=246; previousMaxLatencyMs=227; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000003_4/part-00003-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:15:50 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=404; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000000_1/part-00000-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:15:50 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=501; previousMaxLatencyMs=404; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000001_2/part-00001-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:15:50 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=536; previousMaxLatencyMs=501; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000003_4/part-00003-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:15:50 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000000_1/' directory.
+23/11/29 04:15:50 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=440; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000000_1/part-00000-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro)
+23/11/29 04:15:50 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000001_2/' directory.
+23/11/29 04:15:50 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=441; previousMaxLatencyMs=440; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000001_2/part-00001-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00001-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro)
+23/11/29 04:15:50 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:15:51 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:51 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:15:51 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:15:51 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:51 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000002_3/' directory.
+23/11/29 04:15:51 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=602; previousMaxLatencyMs=441; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000002_3/part-00002-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00002-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro)
+23/11/29 04:15:51 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000003_4/' directory.
+23/11/29 04:15:51 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:15:51 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:04 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000005_6/' directory.
+23/11/29 04:16:04 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000007_8/' directory.
+23/11/29 04:16:04 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000006_7/' directory.
+23/11/29 04:16:04 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000004_5/' directory.
+23/11/29 04:16:04 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:04 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:05 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:05 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:17 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=260; previousMaxLatencyMs=113; operationCount=22540; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:16:17 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=591; previousMaxLatencyMs=536; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000011_12/part-00011-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:16:17 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=711; previousMaxLatencyMs=591; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000010_11/part-00010-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:16:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000008_9/' directory.
+23/11/29 04:16:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000011_12/' directory.
+23/11/29 04:16:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000010_11/' directory.
+23/11/29 04:16:18 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1057; previousMaxLatencyMs=711; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000009_10/part-00009-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:16:18 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:18 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:18 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000009_10/' directory.
+23/11/29 04:16:19 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:30 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1119; previousMaxLatencyMs=1057; operationCount=16; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000013_14/part-00013-cac21575-0a5a-4fd9-b451-3ca0fa9443b1-c000.avro
+23/11/29 04:16:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000014_15/' directory.
+23/11/29 04:16:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000015_16/' directory.
+23/11/29 04:16:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000012_13/' directory.
+23/11/29 04:16:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000013_14/' directory.
+23/11/29 04:16:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000016_17/' directory.
+23/11/29 04:16:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:44 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000017_18/' directory.
+23/11/29 04:16:44 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000018_19/' directory.
+23/11/29 04:16:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:44 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000019_20/' directory.
+23/11/29 04:16:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:16:52 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000022_23/' directory.
+23/11/29 04:16:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000020_21/' directory.
+23/11/29 04:16:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290415347072369922410818836_0001_m_000021_22/' directory.
+23/11/29 04:16:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 87
+Job [3205aa0304b8402c9b333aa4e01f0b5d] finished successfully.
+Job [28d667101f444c5dbe1d6f91059509fe] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-f78f0429-ce68-48a6-b13d-c5424b8425bb;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 245ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-f78f0429-ce68-48a6-b13d-c5424b8425bb
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:17:15 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:17:15 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:17:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:17:15 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:17:16 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=269; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:17:17 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:17:17 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=153; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:17:23 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:17:23 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=343; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:17:23 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:24 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:24 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:24 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:24 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:24 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=234; previousMaxLatencyMs=109; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000001_2/part-00001-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:17:24 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=232; previousMaxLatencyMs=109; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000003_4/part-00003-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:17:40 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=472; previousMaxLatencyMs=0; operationCount=3; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000003_4/part-00003-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:17:40 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=573; previousMaxLatencyMs=472; operationCount=3; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000000_1/part-00000-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:17:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000003_4/' directory.
+23/11/29 04:17:40 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=473; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000003_4/part-00003-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00003-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro)
+23/11/29 04:17:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000000_1/' directory.
+23/11/29 04:17:40 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=499; previousMaxLatencyMs=473; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000000_1/part-00000-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro)
+23/11/29 04:17:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:17:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000001_2/' directory.
+23/11/29 04:17:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:41 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:17:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:17:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000002_3/' directory.
+23/11/29 04:17:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000004_5/' directory.
+23/11/29 04:17:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000006_7/' directory.
+23/11/29 04:17:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:54 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=709; previousMaxLatencyMs=573; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000007_8/part-00007-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:17:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000005_6/' directory.
+23/11/29 04:17:55 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:17:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000007_8/' directory.
+23/11/29 04:17:55 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:07 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000008_9/' directory.
+23/11/29 04:18:08 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:08 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000009_10/' directory.
+23/11/29 04:18:08 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000011_12/' directory.
+23/11/29 04:18:08 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:08 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:08 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000010_11/' directory.
+23/11/29 04:18:08 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:20 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=190; previousMaxLatencyMs=126; operationCount=26638; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:18:20 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000012_13/' directory.
+23/11/29 04:18:20 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000015_16/' directory.
+23/11/29 04:18:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000013_14/' directory.
+23/11/29 04:18:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000014_15/' directory.
+23/11/29 04:18:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:33 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000016_17/' directory.
+23/11/29 04:18:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:34 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=996; previousMaxLatencyMs=709; operationCount=20; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000018_19/part-00018-855d0152-8d00-4b5f-8ba8-45cc2f7fed14-c000.avro
+23/11/29 04:18:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000017_18/' directory.
+23/11/29 04:18:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000019_20/' directory.
+23/11/29 04:18:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:18:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000018_19/' directory.
+23/11/29 04:18:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000022_23/' directory.
+23/11/29 04:18:44 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000020_21/' directory.
+23/11/29 04:18:45 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290417236367031758166610339_0001_m_000021_22/' directory.
+23/11/29 04:18:45 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 87
+Job [28d667101f444c5dbe1d6f91059509fe] finished successfully.
+Job [020f6a57a2cb401da39cf2e58d7014d3] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-cfabac2a-e699-4727-bcb2-8a80198133b9;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 263ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-cfabac2a-e699-4727-bcb2-8a80198133b9
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:19:05 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:19:05 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:19:05 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:19:05 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:19:06 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=256; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:19:07 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:19:07 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=184; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:19:12 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:19:13 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=324; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:19:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=197; previousMaxLatencyMs=107; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000002_3/part-00002-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=199; previousMaxLatencyMs=197; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000001_2/part-00001-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=229; previousMaxLatencyMs=199; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000003_4/part-00003-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:28 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=401; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000001_2/part-00001-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:28 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=499; previousMaxLatencyMs=401; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000000_1/part-00000-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:29 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=592; previousMaxLatencyMs=499; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000002_3/part-00002-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000001_2/' directory.
+23/11/29 04:19:29 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=449; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000001_2/part-00001-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00001-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro)
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000000_1/' directory.
+23/11/29 04:19:29 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=460; previousMaxLatencyMs=449; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000000_1/part-00000-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro)
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000003_4/' directory.
+23/11/29 04:19:29 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=473; previousMaxLatencyMs=460; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000003_4/part-00003-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00003-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro)
+23/11/29 04:19:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:29 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:19:29 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=360; previousMaxLatencyMs=324; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000001_2
+23/11/29 04:19:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000002_3/' directory.
+23/11/29 04:19:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:42 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=638; previousMaxLatencyMs=592; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000004_5/part-00004-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:19:42 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000006_7/' directory.
+23/11/29 04:19:42 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000005_6/' directory.
+23/11/29 04:19:42 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000007_8/' directory.
+23/11/29 04:19:42 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:43 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000004_5/' directory.
+23/11/29 04:19:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:43 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:55 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=157; previousMaxLatencyMs=144; operationCount=22540; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:19:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000008_9/' directory.
+23/11/29 04:19:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000011_12/' directory.
+23/11/29 04:19:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000009_10/' directory.
+23/11/29 04:19:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000010_11/' directory.
+23/11/29 04:19:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:19:56 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:08 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=817; previousMaxLatencyMs=638; operationCount=16; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000013_14/part-00013-a55fbb0b-5805-40b9-9de7-0a9524747059-c000.avro
+23/11/29 04:20:08 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000013_14/' directory.
+23/11/29 04:20:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000012_13/' directory.
+23/11/29 04:20:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000015_16/' directory.
+23/11/29 04:20:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000014_15/' directory.
+23/11/29 04:20:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:09 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000017_18/' directory.
+23/11/29 04:20:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000016_17/' directory.
+23/11/29 04:20:21 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000019_20/' directory.
+23/11/29 04:20:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:21 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:22 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000018_19/' directory.
+23/11/29 04:20:22 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:30 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000022_23/' directory.
+23/11/29 04:20:31 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000020_21/' directory.
+23/11/29 04:20:32 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290419132273169944053811765_0001_m_000021_22/' directory.
+23/11/29 04:20:33 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 85
+Job [020f6a57a2cb401da39cf2e58d7014d3] finished successfully.
+Job [911ea8a4f70b4661ba337261034cc3c7] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-22498bc0-ce77-4f12-b831-5b5c249cf44f;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 256ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-22498bc0-ce77-4f12-b831-5b5c249cf44f
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:20:49 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:20:49 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:20:49 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:20:49 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:20:50 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=225; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:20:50 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:20:56 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:20:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=358; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:20:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=184; previousMaxLatencyMs=134; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0
+23/11/29 04:20:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:20:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=206; previousMaxLatencyMs=82; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000000_1/part-00000-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:20:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=212; previousMaxLatencyMs=206; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000001_2/part-00001-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:20:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=270; previousMaxLatencyMs=212; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000003_4/part-00003-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:21:12 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=493; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000001_2/part-00001-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:21:13 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000001_2/' directory.
+23/11/29 04:21:13 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=438; previousMaxLatencyMs=0; operationCount=3; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000001_2/part-00001-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00001-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro)
+23/11/29 04:21:13 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000002_3/' directory.
+23/11/29 04:21:13 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:21:13 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:14 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000000_1/' directory.
+23/11/29 04:21:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=751; previousMaxLatencyMs=438; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000000_1/part-00000-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00000-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro)
+23/11/29 04:21:14 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000003_4/' directory.
+23/11/29 04:21:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=384; previousMaxLatencyMs=358; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000002_3
+23/11/29 04:21:14 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:14 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:14 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:27 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000006_7/' directory.
+23/11/29 04:21:27 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000004_5/' directory.
+23/11/29 04:21:27 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:27 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:27 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000005_6/' directory.
+23/11/29 04:21:27 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000007_8/' directory.
+23/11/29 04:21:28 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:28 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000008_9/' directory.
+23/11/29 04:21:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000010_11/' directory.
+23/11/29 04:21:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:40 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:40 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000011_12/' directory.
+23/11/29 04:21:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:41 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1339; previousMaxLatencyMs=493; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000009_10/part-00009-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:21:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000009_10/' directory.
+23/11/29 04:21:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:52 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=173; previousMaxLatencyMs=124; operationCount=28687; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:21:53 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000013_14/' directory.
+23/11/29 04:21:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000014_15/' directory.
+23/11/29 04:21:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000012_13/' directory.
+23/11/29 04:21:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:21:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000015_16/' directory.
+23/11/29 04:21:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000016_17/' directory.
+23/11/29 04:22:07 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:07 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000018_19/' directory.
+23/11/29 04:22:07 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:07 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000017_18/' directory.
+23/11/29 04:22:07 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:08 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=1932; previousMaxLatencyMs=1339; operationCount=20; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000019_20/part-00019-5648ad13-59ee-4305-9dc8-b8bef7e95e5b-c000.avro
+23/11/29 04:22:09 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000019_20/' directory.
+23/11/29 04:22:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000022_23/' directory.
+23/11/29 04:22:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000020_21/' directory.
+23/11/29 04:22:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290420576200821277251592439_0001_m_000021_22/' directory.
+23/11/29 04:22:18 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 86
+Job [911ea8a4f70b4661ba337261034cc3c7] finished successfully.
+Job [935362b44923405d9614642a2e578709] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-c0ab9b27-f181-48f9-8c96-53f35dadec5e;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 265ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-c0ab9b27-f181-48f9-8c96-53f35dadec5e
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 04:22:36 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 04:22:36 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 04:22:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 04:22:36 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 04:22:38 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=259; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 04:22:38 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:22:44 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 04:22:44 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=406; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/70k
+23/11/29 04:22:44 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:22:45 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=153; previousMaxLatencyMs=80; operationCount=2; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000000_1/part-00000-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:22:45 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=159; previousMaxLatencyMs=153; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000003_4/part-00003-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:22:45 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=191; previousMaxLatencyMs=159; operationCount=5; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000002_3/part-00002-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:00 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=168; previousMaxLatencyMs=128; operationCount=6148; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:23:00 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=415; previousMaxLatencyMs=0; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000003_4/part-00003-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:00 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=504; previousMaxLatencyMs=415; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000002_3/part-00002-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:01 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=559; previousMaxLatencyMs=504; operationCount=4; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000001_2/part-00001-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000002_3/' directory.
+23/11/29 04:23:01 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=442; previousMaxLatencyMs=0; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000002_3/part-00002-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00002-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro)
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000003_4/' directory.
+23/11/29 04:23:01 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=462; previousMaxLatencyMs=442; operationCount=4; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000003_4/part-00003-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00003-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro)
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000000_1/' directory.
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:23:01 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:01 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:23:01 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/' directory.
+23/11/29 04:23:01 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000001_2/' directory.
+23/11/29 04:23:01 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:01 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:02 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:02 INFO GhfsStorageStatistics: Detected potential high latency for operation op_create. latencyMs=214; previousMaxLatencyMs=191; operationCount=8; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000004_5/part-00004-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000006_7/' directory.
+23/11/29 04:23:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000007_8/' directory.
+23/11/29 04:23:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000005_6/' directory.
+23/11/29 04:23:15 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:15 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:15 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000004_5/' directory.
+23/11/29 04:23:15 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=468; previousMaxLatencyMs=462; operationCount=8; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000004_5/part-00004-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00004-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro)
+23/11/29 04:23:16 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:28 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000008_9/' directory.
+23/11/29 04:23:28 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=771; previousMaxLatencyMs=559; operationCount=12; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000011_12/part-00011-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:28 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000010_11/' directory.
+23/11/29 04:23:28 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:28 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000009_10/' directory.
+23/11/29 04:23:29 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000011_12/' directory.
+23/11/29 04:23:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:29 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:40 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_read_operations. latencyMs=178; previousMaxLatencyMs=168; operationCount=24589; context=gs://project-thesis-max/input/us_accidents.csv
+23/11/29 04:23:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000012_13/' directory.
+23/11/29 04:23:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000013_14/' directory.
+23/11/29 04:23:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:41 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:41 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000015_16/' directory.
+23/11/29 04:23:42 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:42 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000014_15/' directory.
+23/11/29 04:23:42 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000016_17/' directory.
+23/11/29 04:23:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:54 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=958; previousMaxLatencyMs=771; operationCount=20; context=gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000018_19/part-00018-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro
+23/11/29 04:23:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000017_18/' directory.
+23/11/29 04:23:54 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000019_20/' directory.
+23/11/29 04:23:54 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=476; previousMaxLatencyMs=468; operationCount=20; context=rename(gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000019_20/part-00019-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro -> gs://project-thesis-max/output/apache-spark/70k/part-00019-c4b5200d-e94d-455b-bb61-20f2b961f789-c000.avro)
+23/11/29 04:23:54 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:55 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 04:23:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000018_19/' directory.
+23/11/29 04:24:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000022_23/' directory.
+23/11/29 04:24:03 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000020_21/' directory.
+23/11/29 04:24:05 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/_temporary/0/_temporary/attempt_202311290422444197943612499778467_0001_m_000021_22/' directory.
+23/11/29 04:24:05 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/70k/' directory.
+Time in sec: 86
+Job [935362b44923405d9614642a2e578709] finished successfully.

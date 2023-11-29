@@ -1,0 +1,766 @@
+Execution 1:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5f01129d55274c94b8a17e434a852167/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5f01129d55274c94b8a17e434a852167/driveroutput
+jobUuid: ee2275e6-0291-3392-9a34-a5b6522b0362
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 5f01129d55274c94b8a17e434a852167
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:23:59.595379Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:23:38.433502Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:23:38.499894Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:23:38.894021Z'
+Execution 2:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/527e54db9f2a4c658ea418b3b73a96dd/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/527e54db9f2a4c658ea418b3b73a96dd/driveroutput
+jobUuid: efc8923f-d650-39a2-8f28-90e5ebbb7020
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 527e54db9f2a4c658ea418b3b73a96dd
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:24:27.450048Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:24:08.782456Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:24:08.819967Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:24:09.046355Z'
+Execution 3:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/69c3ffed8ea54de4b61b2c9dde93d38d/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/69c3ffed8ea54de4b61b2c9dde93d38d/driveroutput
+jobUuid: 52c9b22f-624e-3833-ad76-a37d940ea397
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 69c3ffed8ea54de4b61b2c9dde93d38d
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:25:01.348850Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:24:41.376501Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:24:41.423747Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:24:41.676986Z'
+Execution 4:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5582a7d85e1b45658a5607cfb6147d18/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5582a7d85e1b45658a5607cfb6147d18/driveroutput
+jobUuid: 519cd5ee-a554-3ef8-beba-fca79b1f8c80
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 5582a7d85e1b45658a5607cfb6147d18
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:25:35.962270Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:25:16.966642Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:25:17.007610Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:25:17.284355Z'
+Execution 5:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/1526485bb3f74871b0b9067da4dd361e/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/1526485bb3f74871b0b9067da4dd361e/driveroutput
+jobUuid: 19760f95-b770-3ca2-9b58-c966f0c4db7d
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 1526485bb3f74871b0b9067da4dd361e
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:26:09.740216Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:25:48.382270Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:25:48.412859Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:25:48.645483Z'
+Execution 6:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/fff468bc56a44398a097c9f4e7558ed9/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/fff468bc56a44398a097c9f4e7558ed9/driveroutput
+jobUuid: d7ba34d0-4901-3fe1-b4e7-13b5ab5c8277
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: fff468bc56a44398a097c9f4e7558ed9
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:26:39.088204Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:26:20.490931Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:26:20.520566Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:26:20.735154Z'
+Execution 7:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/d48757d8e6c54c1682355f22f478666f/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/d48757d8e6c54c1682355f22f478666f/driveroutput
+jobUuid: 705fdcd6-7a59-3389-b872-bc251b886ca8
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: d48757d8e6c54c1682355f22f478666f
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:27:16.511690Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:26:57.221579Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:26:57.246113Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:26:57.499168Z'
+Execution 8:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/e352217cdf8349928d34e788c4ad2004/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/e352217cdf8349928d34e788c4ad2004/driveroutput
+jobUuid: 3be62753-a103-372f-a943-9f85c54bcff2
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: e352217cdf8349928d34e788c4ad2004
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:27:49.467064Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:27:30.058632Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:27:30.085741Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:27:30.302514Z'
+Execution 9:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/6896c5b582234393afb84db1e8f2fdfd/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/6896c5b582234393afb84db1e8f2fdfd/driveroutput
+jobUuid: 8e40893b-1c3b-30d1-ab46-5bd09f8a4537
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 6896c5b582234393afb84db1e8f2fdfd
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:28:18.601424Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:27:59.526530Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:27:59.557900Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:27:59.787988Z'
+Execution 10:
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5629cbd8bf7d4da1aa34871a985d5b44/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-733260049689-llv9oumj/google-cloud-dataproc-metainfo/ae0dc149-2ee4-4852-b465-ae03808f7e4c/jobs/5629cbd8bf7d4da1aa34871a985d5b44/driveroutput
+jobUuid: bd5b4da5-3f0e-3cbc-a892-cea424326fd9
+placement:
+  clusterName: thesis-spark-cluster-demo
+  clusterUuid: ae0dc149-2ee4-4852-b465-ae03808f7e4c
+reference:
+  jobId: 5629cbd8bf7d4da1aa34871a985d5b44
+  projectId: buoyant-voyage-402900
+sparkJob:
+  args:
+  - gs://project-thesis-max/input/us_accidents_7k.csv
+  - gs://project-thesis-max/input/us_accidents.avsc
+  - gs://project-thesis-max/output/apache-spark/7k/
+  jarFileUris:
+  - gs://project-thesis-max/jars/apache-spark-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+  mainClass: org.thesis.AppSpark
+  properties:
+    spark.jars.packages: org.apache.spark:spark-avro_2.12:3.3.2
+status:
+  state: DONE
+  stateStartTime: '2023-11-29T03:28:51.192243Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2023-11-29T03:28:32.991250Z'
+- state: SETUP_DONE
+  stateStartTime: '2023-11-29T03:28:33.022272Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2023-11-29T03:28:33.242555Z'
+Job [5f01129d55274c94b8a17e434a852167] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-dfa3f308-b5ce-42f3-846d-1996a8f56353;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 410ms :: artifacts dl 11ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-dfa3f308-b5ce-42f3-846d-1996a8f56353
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:23:46 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:23:46 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:23:46 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:23:46 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:23:48 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=250; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:23:48 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:23:48 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=195; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:23:55 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:23:55 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:23:55 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:23:57 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290323553207733590445449173_0001_m_000000_1/' directory.
+23/11/29 03:23:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=437; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290323553207733590445449173_0001_m_000000_1/part-00000-6fac4c6e-74d8-4e7b-bf04-8484c7482ae0-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-6fac4c6e-74d8-4e7b-bf04-8484c7482ae0-c000.avro)
+23/11/29 03:23:58 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:23:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=313; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290323553207733590445449173_0001_m_000000_1
+23/11/29 03:23:58 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:23:58 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=328; previousMaxLatencyMs=313; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+23/11/29 03:23:58 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=168; previousMaxLatencyMs=132; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [5f01129d55274c94b8a17e434a852167] finished successfully.
+Job [527e54db9f2a4c658ea418b3b73a96dd] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-6349e61f-c2cf-4caf-a189-0a9ee50945a5;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 247ms :: artifacts dl 8ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-6349e61f-c2cf-4caf-a189-0a9ee50945a5
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/6ms)
+23/11/29 03:24:15 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:24:15 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:24:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:24:15 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:24:16 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=284; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:24:16 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:24:16 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=168; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:24:22 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:24:23 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=215; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:24:23 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:24:23 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:24:25 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_20231129032423732514868143905064_0001_m_000000_1/' directory.
+23/11/29 03:24:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=429; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_20231129032423732514868143905064_0001_m_000000_1/part-00000-8430a696-b31f-4036-9bce-aef701a46f6a-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-8430a696-b31f-4036-9bce-aef701a46f6a-c000.avro)
+23/11/29 03:24:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:24:26 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=305; previousMaxLatencyMs=215; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_20231129032423732514868143905064_0001_m_000000_1
+23/11/29 03:24:26 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:24:26 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=330; previousMaxLatencyMs=305; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+Time in sec: 8
+Job [527e54db9f2a4c658ea418b3b73a96dd] finished successfully.
+Job [69c3ffed8ea54de4b61b2c9dde93d38d] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-791c88a0-899e-4190-805f-291544a56748;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 275ms :: artifacts dl 10ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-791c88a0-899e-4190-805f-291544a56748
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:24:48 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:24:48 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:24:49 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:24:49 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:24:50 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=253; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:24:50 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:24:56 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:24:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=225; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:24:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:24:57 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=167; previousMaxLatencyMs=149; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0
+23/11/29 03:24:57 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:24:59 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290324573673521204140614944_0001_m_000000_1/' directory.
+23/11/29 03:24:59 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=443; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290324573673521204140614944_0001_m_000000_1/part-00000-d57bd036-8928-4b00-8df1-7a126bfdf777-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-d57bd036-8928-4b00-8df1-7a126bfdf777-c000.avro)
+23/11/29 03:24:59 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:24:59 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=297; previousMaxLatencyMs=225; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290324573673521204140614944_0001_m_000000_1
+23/11/29 03:25:00 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:25:00 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=303; previousMaxLatencyMs=297; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+23/11/29 03:25:00 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=157; previousMaxLatencyMs=133; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [69c3ffed8ea54de4b61b2c9dde93d38d] finished successfully.
+Job [5582a7d85e1b45658a5607cfb6147d18] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-4da9469f-984e-49e9-b5a9-8afad1780ae0;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 265ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-4da9469f-984e-49e9-b5a9-8afad1780ae0
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:25:23 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:25:23 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:25:23 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:25:23 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:25:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=261; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:25:25 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:25:25 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=158; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:25:31 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:25:31 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=206; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:25:31 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:25:32 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:25:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290325315121955499242945898_0001_m_000000_1/' directory.
+23/11/29 03:25:34 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=422; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290325315121955499242945898_0001_m_000000_1/part-00000-e9f22772-bd2a-4a23-94f0-31a0882f6d18-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-e9f22772-bd2a-4a23-94f0-31a0882f6d18-c000.avro)
+23/11/29 03:25:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:25:34 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=299; previousMaxLatencyMs=206; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290325315121955499242945898_0001_m_000000_1
+23/11/29 03:25:34 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:25:34 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=312; previousMaxLatencyMs=299; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+23/11/29 03:25:35 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=161; previousMaxLatencyMs=146; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [5582a7d85e1b45658a5607cfb6147d18] finished successfully.
+Job [1526485bb3f74871b0b9067da4dd361e] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-269cc1f6-0a13-418a-aece-bbb917164e56;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 258ms :: artifacts dl 7ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-269cc1f6-0a13-418a-aece-bbb917164e56
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/6ms)
+23/11/29 03:25:55 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:25:55 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:25:55 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:25:55 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:25:56 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=268; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:25:57 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:26:03 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:26:03 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=224; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:26:03 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:26:03 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=166; previousMaxLatencyMs=147; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0
+23/11/29 03:26:04 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:26:05 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=161; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326032434555694829881337_0001_m_000000_1/part-00000-dab37078-5b67-41bf-8fdb-636ac6fb2a83-c000.avro
+23/11/29 03:26:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326032434555694829881337_0001_m_000000_1/' directory.
+23/11/29 03:26:06 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=444; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326032434555694829881337_0001_m_000000_1/part-00000-dab37078-5b67-41bf-8fdb-636ac6fb2a83-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-dab37078-5b67-41bf-8fdb-636ac6fb2a83-c000.avro)
+23/11/29 03:26:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:26:06 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=289; previousMaxLatencyMs=224; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326032434555694829881337_0001_m_000000_1
+23/11/29 03:26:06 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:26:06 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=291; previousMaxLatencyMs=289; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+Time in sec: 8
+Job [1526485bb3f74871b0b9067da4dd361e] finished successfully.
+Job [fff468bc56a44398a097c9f4e7558ed9] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-01e09fa5-4f80-4f52-89fb-c20ff3d5b80e;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 250ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-01e09fa5-4f80-4f52-89fb-c20ff3d5b80e
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:26:26 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:26:26 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:26:26 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:26:26 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:26:28 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=267; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:26:28 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:26:28 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=168; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:26:34 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:26:34 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=211; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:26:34 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:26:35 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:26:37 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326351335698421182063467_0001_m_000000_1/' directory.
+23/11/29 03:26:37 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=482; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326351335698421182063467_0001_m_000000_1/part-00000-3071cb51-e9e7-4872-a5b3-31e2c66effed-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-3071cb51-e9e7-4872-a5b3-31e2c66effed-c000.avro)
+23/11/29 03:26:37 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:26:37 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=286; previousMaxLatencyMs=211; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290326351335698421182063467_0001_m_000000_1
+23/11/29 03:26:38 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:26:38 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=352; previousMaxLatencyMs=286; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+23/11/29 03:26:38 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=154; previousMaxLatencyMs=131; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [fff468bc56a44398a097c9f4e7558ed9] finished successfully.
+Job [d48757d8e6c54c1682355f22f478666f] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-2cec9721-413d-4909-a8ac-28b91a4c12ef;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 285ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-2cec9721-413d-4909-a8ac-28b91a4c12ef
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/8ms)
+23/11/29 03:27:03 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:27:03 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:27:03 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:27:03 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:27:05 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=274; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:27:05 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:27:05 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=216; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:27:11 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:27:12 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=241; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:27:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:27:12 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:27:14 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327125562012376286645608_0001_m_000000_1/' directory.
+23/11/29 03:27:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=400; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327125562012376286645608_0001_m_000000_1/part-00000-25cfb460-9647-4f4c-93d3-3b8db2fe120c-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-25cfb460-9647-4f4c-93d3-3b8db2fe120c-c000.avro)
+23/11/29 03:27:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:27:15 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=305; previousMaxLatencyMs=241; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327125562012376286645608_0001_m_000000_1
+23/11/29 03:27:15 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:27:15 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=307; previousMaxLatencyMs=305; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+23/11/29 03:27:15 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=159; previousMaxLatencyMs=131; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [d48757d8e6c54c1682355f22f478666f] finished successfully.
+Job [e352217cdf8349928d34e788c4ad2004] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-27f6be2c-171e-4b03-b62a-140ddcaadd16;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 277ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-27f6be2c-171e-4b03-b62a-140ddcaadd16
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:27:36 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:27:36 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:27:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:27:36 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:27:38 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=259; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:27:38 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:27:38 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=163; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:27:44 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:27:45 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=202; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:27:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:27:45 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:27:47 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=251; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327455099998361043445213_0001_m_000000_1/part-00000-2e1ac307-7ebc-4d63-9326-4e0309a752f1-c000.avro
+23/11/29 03:27:47 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327455099998361043445213_0001_m_000000_1/' directory.
+23/11/29 03:27:47 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=394; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327455099998361043445213_0001_m_000000_1/part-00000-2e1ac307-7ebc-4d63-9326-4e0309a752f1-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-2e1ac307-7ebc-4d63-9326-4e0309a752f1-c000.avro)
+23/11/29 03:27:48 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:27:48 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=286; previousMaxLatencyMs=202; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290327455099998361043445213_0001_m_000000_1
+23/11/29 03:27:48 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:27:48 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=293; previousMaxLatencyMs=286; operationCount=3; context=gs://project-thesis-max/output/apache-spark/7k/_temporary
+Time in sec: 8
+Job [e352217cdf8349928d34e788c4ad2004] finished successfully.
+Job [6896c5b582234393afb84db1e8f2fdfd] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-957e623c-d19c-4c59-a742-0dcd01ec5cb7;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 297ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-957e623c-d19c-4c59-a742-0dcd01ec5cb7
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:28:06 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:28:06 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:28:06 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:28:06 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:28:07 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=302; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:28:07 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:28:14 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:28:14 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=204; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:28:14 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:28:14 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:28:16 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=232; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328146929305298922731151_0001_m_000000_1/part-00000-3a918b10-bfcd-4ef5-834c-8bb9bf206df6-c000.avro
+23/11/29 03:28:16 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328146929305298922731151_0001_m_000000_1/' directory.
+23/11/29 03:28:16 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=404; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328146929305298922731151_0001_m_000000_1/part-00000-3a918b10-bfcd-4ef5-834c-8bb9bf206df6-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-3a918b10-bfcd-4ef5-834c-8bb9bf206df6-c000.avro)
+23/11/29 03:28:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:28:17 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=295; previousMaxLatencyMs=204; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328146929305298922731151_0001_m_000000_1
+23/11/29 03:28:17 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+Time in sec: 8
+Job [6896c5b582234393afb84db1e8f2fdfd] finished successfully.
+Job [5629cbd8bf7d4da1aa34871a985d5b44] submitted.
+Waiting for job output...
+:: loading settings :: url = jar:file:/usr/lib/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.spark#spark-avro_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-72810450-f5f6-4983-8fe5-dacb5afca7a0;1.0
+        confs: [default]
+        found org.apache.spark#spark-avro_2.12;3.3.2 in central
+        found org.tukaani#xz;1.9 in central
+        found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 264ms :: artifacts dl 9ms
+        :: modules in use:
+        org.apache.spark#spark-avro_2.12;3.3.2 from central in [default]
+        org.spark-project.spark#unused;1.0.0 from central in [default]
+        org.tukaani#xz;1.9 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   3   |   0   |   0   |   0   ||   3   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-72810450-f5f6-4983-8fe5-dacb5afca7a0
+        confs: [default]
+        0 artifacts copied, 3 already retrieved (0kB/7ms)
+23/11/29 03:28:38 INFO SparkEnv: Registering MapOutputTracker
+23/11/29 03:28:38 INFO SparkEnv: Registering BlockManagerMaster
+23/11/29 03:28:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/29 03:28:38 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/29 03:28:40 INFO GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=275; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:28:40 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+23/11/29 03:28:40 INFO GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=162; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-us-central1-733260049689-xllyhmud/ae0dc149-2ee4-4852-b465-ae03808f7e4c/spark-job-history
+23/11/29 03:28:46 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+23/11/29 03:28:47 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=257; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k
+23/11/29 03:28:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:28:47 INFO PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+23/11/29 03:28:48 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=153; previousMaxLatencyMs=0; operationCount=1; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328471398432862957804408_0001_m_000000_1/part-00000-8e049b95-01b1-4790-8345-42b054589250-c000.avro
+23/11/29 03:28:49 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328471398432862957804408_0001_m_000000_1/' directory.
+23/11/29 03:28:49 INFO GhfsStorageStatistics: Detected potential high latency for operation op_rename. latencyMs=408; previousMaxLatencyMs=0; operationCount=1; context=rename(gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328471398432862957804408_0001_m_000000_1/part-00000-8e049b95-01b1-4790-8345-42b054589250-c000.avro -> gs://project-thesis-max/output/apache-spark/7k/part-00000-8e049b95-01b1-4790-8345-42b054589250-c000.avro)
+23/11/29 03:28:49 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/' directory.
+23/11/29 03:28:49 INFO GhfsStorageStatistics: Detected potential high latency for operation op_delete. latencyMs=317; previousMaxLatencyMs=257; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_temporary/0/_temporary/attempt_202311290328471398432862957804408_0001_m_000000_1
+23/11/29 03:28:50 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://project-thesis-max/output/apache-spark/7k/' directory.
+23/11/29 03:28:50 INFO GhfsStorageStatistics: Detected potential high latency for operation stream_write_close_operations. latencyMs=160; previousMaxLatencyMs=153; operationCount=2; context=gs://project-thesis-max/output/apache-spark/7k/_SUCCESS
+Time in sec: 8
+Job [5629cbd8bf7d4da1aa34871a985d5b44] finished successfully.

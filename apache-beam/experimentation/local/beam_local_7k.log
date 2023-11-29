@@ -1,0 +1,372 @@
+Execution 1:
+Nov 29, 2023 3:38:51 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:38:51 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 1 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 8bdeddbf-4222-402e-9a2c-a14eafa47ec0 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 0e3781b8-6dbd-4d93-9311-58274ea9ad46 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 6d5e7065-16ec-4a6d-8fd2-4db28d146780 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 8d7bad08-33e6-40aa-aec6-256d2a733fb6 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/9c73a4798d7bad08-33e6-40aa-aec6-256d2a733fb6
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/a69c031a6d5e7065-16ec-4a6d-8fd2-4db28d146780
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/dd7254fe0e3781b8-6dbd-4d93-9311-58274ea9ad46
+Nov 29, 2023 3:39:10 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/53c2627b8bdeddbf-4222-402e-9a2c-a14eafa47ec0
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 4 file results
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 4.
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/53c2627b8bdeddbf-4222-402e-9a2c-a14eafa47ec0, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00004.avro
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/a69c031a6d5e7065-16ec-4a6d-8fd2-4db28d146780, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00004.avro
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/dd7254fe0e3781b8-6dbd-4d93-9311-58274ea9ad46, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00004.avro
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/9c73a4798d7bad08-33e6-40aa-aec6-256d2a733fb6, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00004.avro
+Nov 29, 2023 3:39:11 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-0397a966-dace-42b1-957a-dc67ac473cea/].
+Time in sec: 21
+Execution 2:
+Nov 29, 2023 3:39:16 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:39:16 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 0bfada44-99da-4e3c-b722-ce2f579d417a for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer afde55fc-559c-491f-aa82-a9debee779d9 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 357d448a-1b36-4af2-ba0f-1df249555df6 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 8c3cbd6b-7609-43b5-bb69-0281755eb815 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 57409973-5fb8-49ec-87ed-7faf9c75db3a for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/c347b6030bfada44-99da-4e3c-b722-ce2f579d417a
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/21a7890057409973-5fb8-49ec-87ed-7faf9c75db3a
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/d572ee3eafde55fc-559c-491f-aa82-a9debee779d9
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/4d5ecc538c3cbd6b-7609-43b5-bb69-0281755eb815
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/649a83ab357d448a-1b36-4af2-ba0f-1df249555df6
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 5 file results
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 5.
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/21a7890057409973-5fb8-49ec-87ed-7faf9c75db3a, shard=4, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00004-of-00005.avro
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/c347b6030bfada44-99da-4e3c-b722-ce2f579d417a, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00005.avro
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/d572ee3eafde55fc-559c-491f-aa82-a9debee779d9, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00005.avro
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/4d5ecc538c3cbd6b-7609-43b5-bb69-0281755eb815, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00005.avro
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/649a83ab357d448a-1b36-4af2-ba0f-1df249555df6, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00005.avro
+Nov 29, 2023 3:39:36 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-583d610b-3747-4da3-9b2b-2978691a8175/].
+Time in sec: 22
+Execution 3:
+Nov 29, 2023 3:39:41 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:39:41 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer e94c640b-4205-4d60-b3a4-ba0bdb72e5c8 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer ff8a1afb-630f-4f05-8635-af3edff566ec for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer f9d13786-aab8-4f08-9e80-8a11456703b2 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 660c90ca-8ba6-4166-9f97-1e573a41f97e for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 2d3b514c-9642-4ea5-8cf1-7f6780677549 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/eb61e29fff8a1afb-630f-4f05-8635-af3edff566ec
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/1db7a2c5e94c640b-4205-4d60-b3a4-ba0bdb72e5c8
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/8b5220ec2d3b514c-9642-4ea5-8cf1-7f6780677549
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/0d71cd20f9d13786-aab8-4f08-9e80-8a11456703b2
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/ee62923d660c90ca-8ba6-4166-9f97-1e573a41f97e
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 5 file results
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 5.
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/eb61e29fff8a1afb-630f-4f05-8635-af3edff566ec, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00005.avro
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/1db7a2c5e94c640b-4205-4d60-b3a4-ba0bdb72e5c8, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00005.avro
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/ee62923d660c90ca-8ba6-4166-9f97-1e573a41f97e, shard=4, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00004-of-00005.avro
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/8b5220ec2d3b514c-9642-4ea5-8cf1-7f6780677549, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00005.avro
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/0d71cd20f9d13786-aab8-4f08-9e80-8a11456703b2, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00005.avro
+Nov 29, 2023 3:39:58 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-11607378-796e-45a6-aafe-65d2e426b42f/].
+Time in sec: 19
+Execution 4:
+Nov 29, 2023 3:40:02 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:40:03 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer a5ac65ee-12cf-4816-8ea8-4c048ee6e544 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 68080d61-1a09-427e-b13f-42cfab9f518e for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 9cbb60b4-d367-4079-8617-b4e72a093bef for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 0ca59166-dc5f-4172-a990-b7a346e29b3a for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/05e6fc4268080d61-1a09-427e-b13f-42cfab9f518e
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/7209aa2c9cbb60b4-d367-4079-8617-b4e72a093bef
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/7d4c59a50ca59166-dc5f-4172-a990-b7a346e29b3a
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/bc66abf7a5ac65ee-12cf-4816-8ea8-4c048ee6e544
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 4 file results
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 4.
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/7d4c59a50ca59166-dc5f-4172-a990-b7a346e29b3a, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00004.avro
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/bc66abf7a5ac65ee-12cf-4816-8ea8-4c048ee6e544, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00004.avro
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/05e6fc4268080d61-1a09-427e-b13f-42cfab9f518e, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00004.avro
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/7209aa2c9cbb60b4-d367-4079-8617-b4e72a093bef, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00004.avro
+Nov 29, 2023 3:40:20 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-ced4253f-ab5e-40b9-a2f6-658498effcd3/].
+Time in sec: 19
+Execution 5:
+Nov 29, 2023 3:40:24 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:40:24 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 2002ddb8-68e4-4e6d-a51a-2a22c485a442 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer da2a6b43-fb51-46cb-92cd-4cf8751a20c0 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer d446b4fc-a499-4ce0-a9bd-82a903be49c7 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 2c6772b7-bee4-4aec-986c-bca6a02fa59b for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer c10cfc94-4e87-4177-b639-ccecbe3e425f for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/8c7d2e4ec10cfc94-4e87-4177-b639-ccecbe3e425f
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/cef1d72e2002ddb8-68e4-4e6d-a51a-2a22c485a442
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/e8dd19c0da2a6b43-fb51-46cb-92cd-4cf8751a20c0
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/5e8d57052c6772b7-bee4-4aec-986c-bca6a02fa59b
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/f760f67fd446b4fc-a499-4ce0-a9bd-82a903be49c7
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 5 file results
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 5.
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/cef1d72e2002ddb8-68e4-4e6d-a51a-2a22c485a442, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00005.avro
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/8c7d2e4ec10cfc94-4e87-4177-b639-ccecbe3e425f, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00005.avro
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/e8dd19c0da2a6b43-fb51-46cb-92cd-4cf8751a20c0, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00005.avro
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/f760f67fd446b4fc-a499-4ce0-a9bd-82a903be49c7, shard=4, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00004-of-00005.avro
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/5e8d57052c6772b7-bee4-4aec-986c-bca6a02fa59b, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00005.avro
+Nov 29, 2023 3:40:40 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-3a0be92d-c8fb-4986-8747-a73801a0c968/].
+Time in sec: 17
+Execution 6:
+Nov 29, 2023 3:40:45 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:40:45 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 1 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer d633f485-c566-4574-a73e-42bf2246aa67 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 23a827f9-4e83-4a3d-9b33-eb4f0bf60bfa for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer f9c67c8f-d18b-4768-9ea9-119e1688a4ce for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 5a4d1ce5-8f24-433c-a278-b47308896f92 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/cbbb4450f9c67c8f-d18b-4768-9ea9-119e1688a4ce
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/b9c51b5723a827f9-4e83-4a3d-9b33-eb4f0bf60bfa
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/baa12ec6d633f485-c566-4574-a73e-42bf2246aa67
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/359a114b5a4d1ce5-8f24-433c-a278-b47308896f92
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 4 file results
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 4.
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/b9c51b5723a827f9-4e83-4a3d-9b33-eb4f0bf60bfa, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00004.avro
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/cbbb4450f9c67c8f-d18b-4768-9ea9-119e1688a4ce, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00004.avro
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/359a114b5a4d1ce5-8f24-433c-a278-b47308896f92, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00004.avro
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/baa12ec6d633f485-c566-4574-a73e-42bf2246aa67, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00004.avro
+Nov 29, 2023 3:40:59 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-cfcad6c5-b4bd-4f35-862d-f41f8fcaf486/].
+Time in sec: 16
+Execution 7:
+Nov 29, 2023 3:41:03 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:41:03 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:41:21 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer a2c276d7-b0fd-4582-8de5-1a75ef83595d for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:21 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 532bbad7-983b-4106-8305-64cef0cf36ea for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:21 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer b65724f3-5302-4083-8b30-1be6d854c8b3 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:21 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 11bb309e-9879-4c80-b421-b4a06da7290e for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/8a1875b0b65724f3-5302-4083-8b30-1be6d854c8b3
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/3bd4a8bf11bb309e-9879-4c80-b421-b4a06da7290e
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/aa55b422a2c276d7-b0fd-4582-8de5-1a75ef83595d
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/4126b401532bbad7-983b-4106-8305-64cef0cf36ea
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 4 file results
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 4.
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/8a1875b0b65724f3-5302-4083-8b30-1be6d854c8b3, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00004.avro
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/4126b401532bbad7-983b-4106-8305-64cef0cf36ea, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00004.avro
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/3bd4a8bf11bb309e-9879-4c80-b421-b4a06da7290e, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00004.avro
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/aa55b422a2c276d7-b0fd-4582-8de5-1a75ef83595d, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00004.avro
+Nov 29, 2023 3:41:22 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-f9bd04b5-54ef-4784-b9b5-e113d0f78bd5/].
+Time in sec: 20
+Execution 8:
+Nov 29, 2023 3:41:26 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:41:26 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 61e7a9ab-fc4a-4fd0-96c0-cae3a1471e16 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 0bae318c-4d4a-4666-8b6c-b14a37b7c08e for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer b3bda51d-31dc-440b-899c-deaa8cd9927d for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/47a78cbc0bae318c-4d4a-4666-8b6c-b14a37b7c08e
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/14850d2bb3bda51d-31dc-440b-899c-deaa8cd9927d
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/9c36e4c861e7a9ab-fc4a-4fd0-96c0-cae3a1471e16
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 3 file results
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 3.
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/47a78cbc0bae318c-4d4a-4666-8b6c-b14a37b7c08e, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00003.avro
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/14850d2bb3bda51d-31dc-440b-899c-deaa8cd9927d, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00003.avro
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/9c36e4c861e7a9ab-fc4a-4fd0-96c0-cae3a1471e16, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00003.avro
+Nov 29, 2023 3:41:44 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-c8917c42-1981-4076-8532-debd7f421c9a/].
+Time in sec: 19
+Execution 9:
+Nov 29, 2023 3:41:48 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:41:49 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 0b7f77d8-d3d1-45f2-9d9c-476b288243b3 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 37556110-1d93-4ae8-bce5-9a4e8ccd48bb for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 285723c7-3e2d-4d57-bc7a-87a4edd0c189 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 84d3c697-518c-4212-8fd9-2dea7f8f194b for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 453ed706-c260-4c4c-a5a9-fa1f68b43098 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/1d17b38c285723c7-3e2d-4d57-bc7a-87a4edd0c189
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/9fa08f75453ed706-c260-4c4c-a5a9-fa1f68b43098
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/e0d9e5f00b7f77d8-d3d1-45f2-9d9c-476b288243b3
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/a7e4b6a937556110-1d93-4ae8-bce5-9a4e8ccd48bb
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/07467c9284d3c697-518c-4212-8fd9-2dea7f8f194b
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 5 file results
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 5.
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/1d17b38c285723c7-3e2d-4d57-bc7a-87a4edd0c189, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00005.avro
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/9fa08f75453ed706-c260-4c4c-a5a9-fa1f68b43098, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00005.avro
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/e0d9e5f00b7f77d8-d3d1-45f2-9d9c-476b288243b3, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00005.avro
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/a7e4b6a937556110-1d93-4ae8-bce5-9a4e8ccd48bb, shard=3, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00003-of-00005.avro
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/07467c9284d3c697-518c-4212-8fd9-2dea7f8f194b, shard=4, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00004-of-00005.avro
+Nov 29, 2023 3:42:03 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-7de07e69-377a-412e-ad42-841bb7b64c41/].
+Time in sec: 17
+Execution 10:
+Nov 29, 2023 3:42:07 AM org.apache.beam.sdk.io.FileBasedSource getEstimatedSizeBytes
+INFO: Filepattern /resources/us_accidents.csv matched 1 files with total size 2598438
+Nov 29, 2023 3:42:07 AM org.apache.beam.sdk.io.FileBasedSource split
+INFO: Splitting filepattern /resources/us_accidents.csv into bundles of size 324804 took 2 ms and produced 1 files and 8 bundles
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 22668014-0e49-4113-8f2c-934d4ed82d59 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 83e5abd5-40e9-42af-a2e4-589926d10287 for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.WriteFiles$WriteShardsIntoTempFilesFn processElement
+INFO: Opening writer 8f5a4e64-0c7c-4f63-8009-21cb091170cc for window org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5 pane PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0} destination null
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/c7061f2622668014-0e49-4113-8f2c-934d4ed82d59
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/7058d9188f5a4e64-0c7c-4f63-8009-21cb091170cc
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$Writer close
+INFO: Successfully wrote temporary file /src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/c16de80583e5abd5-40e9-42af-a2e4-589926d10287
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.WriteFiles$FinalizeTempFileBundles$FinalizeFn process
+INFO: Finalizing 3 file results
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation createMissingEmptyShards
+INFO: Finalizing for destination null num shards 3.
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/c16de80583e5abd5-40e9-42af-a2e4-589926d10287, shard=2, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00002-of-00003.avro
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/7058d9188f5a4e64-0c7c-4f63-8009-21cb091170cc, shard=1, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00001-of-00003.avro
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation moveToOutputFiles
+INFO: Will copy temporary file FileResult{tempFilename=/src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/c7061f2622668014-0e49-4113-8f2c-934d4ed82d59, shard=0, window=org.apache.beam.sdk.transforms.windowing.GlobalWindow@13d9cbf5, paneInfo=PaneInfo{isFirst=true, isLast=true, timing=ON_TIME, index=0, onTimeIndex=0}} to final location /src/main/resources/output/beam-00000-of-00003.avro
+Nov 29, 2023 3:42:25 AM org.apache.beam.sdk.io.FileBasedSink$WriteOperation removeTemporaryFiles
+WARNING: Failed to match temporary files under: [/src/main/resources/output/.temp-beam-d37d00ac-e477-4bef-a13d-94537b4f8f48/].
+Time in sec: 19
